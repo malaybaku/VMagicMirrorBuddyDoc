@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface ITransform3D | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface ITransform3D | VMagicMirror Buddy ">
+      
+      <meta name="description" content="姿勢を取得・編集できるような3DオブジェクトのTransform情報です。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.ITransform3D">
+
+
+
+  <h1 id="VMagicMirror_Buddy_ITransform3D" data-uid="VMagicMirror.Buddy.ITransform3D" class="text-break">
+Interface ITransform3D  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>姿勢を取得・編集できるような3DオブジェクトのTransform情報です。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ITransform3D</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_LocalPosition_" data-uid="VMagicMirror.Buddy.ITransform3D.LocalPosition*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_LocalPosition" data-uid="VMagicMirror.Buddy.ITransform3D.LocalPosition">
+  LocalPosition
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトのローカル座標での位置を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 LocalPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_ITransform3D_LocalPosition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+<a class="xref" href="VMagicMirror.Buddy.ITransform3D.html#VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_IReadOnlyTransform3D_">SetParent(IReadOnlyTransform3D)</a> などで親オブジェクトを指定している場合、この値は親オブジェクトに対するローカル姿勢を表します。
+そうでない場合、この値はワールド座標に相当する値になります。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_LocalRotation_" data-uid="VMagicMirror.Buddy.ITransform3D.LocalRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_LocalRotation" data-uid="VMagicMirror.Buddy.ITransform3D.LocalRotation">
+  LocalRotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトのローカル座標での回転を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Quaternion LocalRotation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_ITransform3D_LocalRotation_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+<a class="xref" href="VMagicMirror.Buddy.ITransform3D.html#VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_IReadOnlyTransform3D_">SetParent(IReadOnlyTransform3D)</a> などで親オブジェクトを指定している場合、この値は親オブジェクトに対するローカル姿勢を表します。
+そうでない場合、この値はワールド座標に相当する値になります。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_LocalScale_" data-uid="VMagicMirror.Buddy.ITransform3D.LocalScale*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_LocalScale" data-uid="VMagicMirror.Buddy.ITransform3D.LocalScale">
+  LocalScale
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトのローカル座標でのスケールを取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 LocalScale { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_ITransform3D_LocalScale_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+<a class="xref" href="VMagicMirror.Buddy.ITransform3D.html#VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_IReadOnlyTransform3D_">SetParent(IReadOnlyTransform3D)</a> などで親オブジェクトを指定している場合、この値は親オブジェクトのスケールと組み合わせて適用されます。
+そうでない場合、この値そのものでオブジェクトのスケールが定まります。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_Position_" data-uid="VMagicMirror.Buddy.ITransform3D.Position*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_Position" data-uid="VMagicMirror.Buddy.ITransform3D.Position">
+  Position
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトの位置をワールド座標で取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 Position { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_Rotation_" data-uid="VMagicMirror.Buddy.ITransform3D.Rotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_Rotation" data-uid="VMagicMirror.Buddy.ITransform3D.Rotation">
+  Rotation
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトの回転をワールド座標で取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Quaternion Rotation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_AsReadOnly_" data-uid="VMagicMirror.Buddy.ITransform3D.AsReadOnly*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_AsReadOnly" data-uid="VMagicMirror.Buddy.ITransform3D.AsReadOnly">
+  AsReadOnly()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>インスタンスを読み取り専用とみなした値に変換します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyTransform3D AsReadOnly()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IReadOnlyTransform3D.html">IReadOnlyTransform3D</a></dt>
+    <dd><p>読み取り専用扱いに変換した値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_ITransform3D_AsReadOnly_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドの戻り値を経由するとTransformの状態は編集できなくなります。
+ただし、呼び出し元のインスタンス自体は引き続き編集可能です。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_RemoveParent_" data-uid="VMagicMirror.Buddy.ITransform3D.RemoveParent*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_RemoveParent" data-uid="VMagicMirror.Buddy.ITransform3D.RemoveParent">
+  RemoveParent()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>親オブジェクトを削除し、オブジェクトをワールド空間に直接配置した状態にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RemoveParent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_SetParent_" data-uid="VMagicMirror.Buddy.ITransform3D.SetParent*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_HumanBodyBones_" data-uid="VMagicMirror.Buddy.ITransform3D.SetParent(VMagicMirror.Buddy.HumanBodyBones)">
+  SetParent(HumanBodyBones)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>親オブジェクトとして、メインアバターの特定のボーンを指定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetParent(HumanBodyBones bone)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a></dt>
+    <dd><p>親オブジェクトとして用いるアバターのボーン</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_HumanBodyBones__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html#VMagicMirror_Buddy_HumanBodyBones_None">None</a>や<a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html#VMagicMirror_Buddy_HumanBodyBones_LastBone">LastBone</a>を指定した場合、親オブジェクトを外す処理として扱われます。
+この関数はメインアバターがロードされていない状態でも呼び出せます。
+メインアバターがロードされた時点で、指定したアバターのボーンが親オブジェクトに切り替わります。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_SetParent_" data-uid="VMagicMirror.Buddy.ITransform3D.SetParent*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_IReadOnlyTransform3D_" data-uid="VMagicMirror.Buddy.ITransform3D.SetParent(VMagicMirror.Buddy.IReadOnlyTransform3D)">
+  SetParent(IReadOnlyTransform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>親オブジェクトを指定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetParent(IReadOnlyTransform3D parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="VMagicMirror.Buddy.IReadOnlyTransform3D.html">IReadOnlyTransform3D</a></dt>
+    <dd><p>親オブジェクト</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_IReadOnlyTransform3D__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>親オブジェクトを指定すると、このTransformが関連するオブジェクトの姿勢や大きさは親オブジェクトの影響を受けるようになります。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_ITransform3D_SetParent_" data-uid="VMagicMirror.Buddy.ITransform3D.SetParent*"></a>
+
+  <h3 id="VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_ITransform3D_" data-uid="VMagicMirror.Buddy.ITransform3D.SetParent(VMagicMirror.Buddy.ITransform3D)">
+  SetParent(ITransform3D)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>親オブジェクトを指定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetParent(ITransform3D parent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>parent</code> <a class="xref" href="VMagicMirror.Buddy.ITransform3D.html">ITransform3D</a></dt>
+    <dd><p>親オブジェクト</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_ITransform3D__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>親オブジェクトを指定すると、このTransformが関連するオブジェクトの姿勢や大きさは親オブジェクトの影響を受けるようになります。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

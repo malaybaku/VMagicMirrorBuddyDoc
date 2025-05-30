@@ -1,0 +1,841 @@
+{
+  "source_base_path": "C:/Users/style/Documents/VMagicMirror/Unity/docs_buddy",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.AppLanguage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.AppLanguage.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.AppLanguage",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.AppLanguage.yml\" sourcestartlinenumber=\"1\">VMagicMirrorの表示に使用している言語です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.AudioStartedInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.AudioStartedInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.AudioStartedInfo",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.AudioStartedInfo.yml\" sourcestartlinenumber=\"1\"><xref href=\"VMagicMirror.Buddy.IAudio.AudioStarted\" data-throw-if-not-resolved=\"false\"></xref> イベントに付随する情報です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.AudioStoppedInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.AudioStoppedInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.AudioStoppedInfo",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.AudioStoppedInfo.yml\" sourcestartlinenumber=\"1\"><xref href=\"VMagicMirror.Buddy.IAudio.AudioStopped\" data-throw-if-not-resolved=\"false\"></xref> イベントに付随する情報です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.AudioStoppedReason.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.AudioStoppedReason.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.AudioStoppedReason",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.AudioStoppedReason.yml\" sourcestartlinenumber=\"1\"><xref href=\"VMagicMirror.Buddy.IAudio.Play(System.String%2cSystem.Single%2cSystem.Single%2cSystem.String)\" data-throw-if-not-resolved=\"false\"></xref> で再生した音声が停止した理由を表す値です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.BlendShapePresetNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.BlendShapePresetNames.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.BlendShapePresetNames",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.BlendShapePresetNames.yml\" sourcestartlinenumber=\"1\"><xref href=\"VMagicMirror.Buddy.IAvatarFacial\" data-throw-if-not-resolved=\"false\"></xref>などで適用されることのあるブレンドシェイプ名のうち、\nVRM1.0 の標準として定義されるブレンドシェイプの名称を定義したクラスです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.FaceSwitchState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.FaceSwitchState.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.FaceSwitchState",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.FaceSwitchState.yml\" sourcestartlinenumber=\"1\"><xref href=\"VMagicMirror.Buddy.IAvatarFacial.GetActiveFaceSwitch\" data-throw-if-not-resolved=\"false\"></xref> の結果として取得できるような、\nFace Switch機能で検出したユーザーの表情です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.GamepadButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.GamepadButton.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.GamepadButton",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.GamepadButton.yml\" sourcestartlinenumber=\"1\">ゲームパッドのボタンです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.HumanBodyBones.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.HumanBodyBones.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.HumanBodyBones",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.HumanBodyBones.yml\" sourcestartlinenumber=\"1\">UnityEngineのHumanBodyBonesと同じ順序で定義された人型ボーン情報の一覧です。\nただし、UnityEngineの値とは異なり、無効なボーンを表す <xref href=\"VMagicMirror.Buddy.HumanBodyBones.None\" data-throw-if-not-resolved=\"false\"></xref> が追加で定義されています。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IAudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IAudio.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IAudio",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IAudio.yml\" sourcestartlinenumber=\"1\">音声の再生に関連するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IAvatarBodyParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IAvatarBodyParameter.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IAvatarBodyParameter",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IAvatarFacial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IAvatarFacial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IAvatarFacial",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IAvatarFacial.yml\" sourcestartlinenumber=\"1\">アバターの表情の状態に関するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IAvatarLoadEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IAvatarLoadEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IAvatarLoadEvent",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IAvatarLoadEvent.yml\" sourcestartlinenumber=\"1\">アバターのロード状態に関するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IAvatarMotionEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IAvatarMotionEvent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IAvatarMotionEvent",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IAvatarMotionEvent.yml\" sourcestartlinenumber=\"1\">アバターの動作をイベントとして検出できるAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IAvatarPose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IAvatarPose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IAvatarPose",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IAvatarPose.yml\" sourcestartlinenumber=\"1\">アバターの姿勢情報に関するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IBounceDeformSpriteEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IBounceDeformSpriteEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IBounceDeformSpriteEffect",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IBounceDeformSpriteEffect.yml\" sourcestartlinenumber=\"1\">跳ねているような視覚効果を適用するエフェクトの設定です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IDefaultSpritesSetting.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IDefaultSpritesSetting.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IDefaultSpritesSetting",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IDefaultSpritesSetting.yml\" sourcestartlinenumber=\"1\">まばたき、口パクの画像差分を含むスプライト画像で構成されたデフォルト立ち絵を操作するための設定を定義します。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IDeviceLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IDeviceLayout.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IDeviceLayout",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IDeviceLayout.yml\" sourcestartlinenumber=\"1\">アバターがいる空間内のキーボードなどのデバイスや、アバターウィンドウを撮影しているカメラの配置などのレイアウト情報を取得できるAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IFloatingSpriteEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IFloatingSpriteEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IFloatingSpriteEffect",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IFloatingSpriteEffect.yml\" sourcestartlinenumber=\"1\">浮遊しているような視覚効果を適用するエフェクトの設定です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IGlb.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IGlb.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IGlb",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IGlb.yml\" sourcestartlinenumber=\"1\">GLB形式の3Dモデルの読み込みと操作に関するAPIです。\n本APIは作成途上のものであり、VMagicMirror v4.0.0の時点では本APIは利用できません。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IGui.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IGui.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IGui",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IGuiArea.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IGuiArea.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IGuiArea",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IInput.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IInput",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IInput.yml\" sourcestartlinenumber=\"1\">キーボード、マウス、ゲームパッドなどの入力状態を取得できるAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IJumpSpriteEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IJumpSpriteEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IJumpSpriteEffect",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IJumpSpriteEffect.yml\" sourcestartlinenumber=\"1\">ジャンプ動作を適用するエフェクトの設定です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IManifestTransforms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IManifestTransforms.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IManifestTransforms",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IManifestTransforms.yml\" sourcestartlinenumber=\"1\"><code sourcefile=\"api/VMagicMirror.Buddy.IManifestTransforms.yml\" sourcestartlinenumber=\"1\">manifest.json</code> で定義され、ユーザーがレイアウトを編集可能な2Dまたは3DのTransform情報を取得できるAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IMathUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IMathUtil.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IMathUtil",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IMathUtil.yml\" sourcestartlinenumber=\"1\">数学的な処理を提供するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IO.Directory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IO.Directory.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IO.Directory",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IO.Directory.yml\" sourcestartlinenumber=\"1\">ディレクトリに関連したAPIを提供します。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IO.File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IO.File.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IO.File",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IO.File.yml\" sourcestartlinenumber=\"1\">ファイルに関連したAPIを提供します。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IO.Path.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IO.Path.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IO.Path",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IO.Path.yml\" sourcestartlinenumber=\"1\">ファイルパスに関連したAPIを提供します。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IO",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IProperty",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IProperty.yml\" sourcestartlinenumber=\"1\">マニフェストで定義されたプロパティ値を取得できるAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IPuniSpriteEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IPuniSpriteEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IPuniSpriteEffect",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IPuniSpriteEffect.yml\" sourcestartlinenumber=\"1\">x軸に伸びながらy軸方向に縮む、またその逆を行うような、ぷにぷにする視覚効果を適用するエフェクトの設定です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IReadOnlyTransform2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IReadOnlyTransform2D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IReadOnlyTransform2D",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IReadOnlyTransform2D.yml\" sourcestartlinenumber=\"1\">現在の姿勢やアバターの親ボーンのアタッチ先を読み取り可能なTransform情報です。\nとくに、マニフェストの定義に基づいて生成され、ユーザーがレイアウトを編集できる2DのTransform情報がこのinterfaceの値として表現されます。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IReadOnlyTransform3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IReadOnlyTransform3D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IReadOnlyTransform3D",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IReadOnlyTransform3D.yml\" sourcestartlinenumber=\"1\">現在の姿勢やアバターの親ボーンのアタッチ先を読み取り可能なTransform情報です。\nとくに、マニフェストの定義に基づいて生成され、ユーザーがレイアウトを編集できる3DのTransform情報がこのinterfaceの値として表現されます。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IRootApi.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IRootApi.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IRootApi",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IRootApi.yml\" sourcestartlinenumber=\"1\">スクリプトから <code>Api</code> 変数としてアクセスできるような、サブキャラの制御に利用できるAPI群です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IScreen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IScreen.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IScreen",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IScreen.yml\" sourcestartlinenumber=\"1\">アバターを表示しているウィンドウの状態に関するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.ISprite2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.ISprite2D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.ISprite2D",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.ISprite2D.yml\" sourcestartlinenumber=\"1\">画像をアバターウィンドウの最前面に平面的に表示するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.ISprite3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.ISprite3D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.ISprite3D",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.ISprite3D.yml\" sourcestartlinenumber=\"1\">画像を3D空間上のスプライトとして表示するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.ISpriteEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.ISpriteEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.ISpriteEffect",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.ISpriteEffect.yml\" sourcestartlinenumber=\"1\">スプライトを移動・回転・変形できるようなエフェクトを提供するAPIです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.ITransform2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.ITransform2D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.ITransform2D",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.ITransform2D.yml\" sourcestartlinenumber=\"1\">画面の最前面に表示されたオブジェクトについて、2D空間上の姿勢が取得、設定できるインスタンスです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.ITransform3D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.ITransform3D.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.ITransform3D",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.ITransform3D.yml\" sourcestartlinenumber=\"1\">姿勢を取得・編集できるような3DオブジェクトのTransform情報です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IVibrateSpriteEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IVibrateSpriteEffect.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IVibrateSpriteEffect",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IVibrateSpriteEffect.yml\" sourcestartlinenumber=\"1\">x軸とy軸の各方向に振動するような視覚効果を適用するエフェクトの設定です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IVrm.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IVrm.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IVrm",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IVrm.yml\" sourcestartlinenumber=\"1\">サブキャラとしてVRMのロードと操作を行うAPIです。\n本APIは作成途上のものであり、VMagicMirror v4.0.0の時点では本APIは利用できません。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.IVrmAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.IVrmAnimation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.IVrmAnimation",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.IVrmAnimation.yml\" sourcestartlinenumber=\"1\">VRM Animationの読み込み処理に関するAPIです。\n本APIは作成途上のものであり、VMagicMirror v4.0.0の時点では本APIは利用できません。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.PerfectSyncBlendShapeNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.PerfectSyncBlendShapeNames.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.PerfectSyncBlendShapeNames",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.PerfectSyncBlendShapeNames.yml\" sourcestartlinenumber=\"1\">パーフェクトシンク機能で参照するアバターのブレンドシェイプ名です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.Pose.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.Pose.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.Pose",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.Pose.yml\" sourcestartlinenumber=\"1\">位置と回転のペアを表すデータです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.Quaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.Quaternion.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.Quaternion",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.Quaternion.yml\" sourcestartlinenumber=\"1\">UnityEngineのQuaternionとほぼ同等のことが出来る四元数のデータです。\n回転を表すことを目的として定義されています。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.Sprite2DTransitionStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.Sprite2DTransitionStyle.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.Sprite2DTransitionStyle",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.Sprite2DTransitionStyle.yml\" sourcestartlinenumber=\"1\"><xref href=\"VMagicMirror.Buddy.ISprite2D.Show(System.String)\" data-throw-if-not-resolved=\"false\"></xref> でスプライト画像を切り替えるプリセット演出の種類です。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.Vector2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.Vector2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.Vector2",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.Vector2.yml\" sourcestartlinenumber=\"1\">UnityEngineのVector2とほぼ同等のことが出来るようなデータです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.Vector3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.Vector3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy.Vector3",
+      "Summary": "<p sourcefile=\"api/VMagicMirror.Buddy.Vector3.yml\" sourcestartlinenumber=\"1\">UnityEngineのVector3とほぼ同等のことが出来るようなデータです。</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VMagicMirror.Buddy.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VMagicMirror.Buddy.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "VMagicMirror.Buddy",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/buddy-manifest.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/buddy-manifest.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/debug-buddy.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/debug-buddy.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/write-buddy-script.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/write-buddy-script.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "refs/manifest-json-references.md",
+      "output": {
+        ".html": {
+          "relative_path": "refs/manifest-json-references.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "refs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "refs/toc.html"
+        },
+        ".json": {
+          "relative_path": "refs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "static/BuddySample.zip",
+      "output": {
+        "resource": {
+          "relative_path": "static/BuddySample.zip"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

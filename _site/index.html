@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>VMagicMirror サブキャラ機能 | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="VMagicMirror サブキャラ機能 | VMagicMirror Buddy ">
+      
+      
+      <link rel="icon" href="favicon.ico">
+      <link rel="stylesheet" href="public/docfx.min.css">
+      <link rel="stylesheet" href="public/main.css">
+      <meta name="docfx:navrel" content="toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/index.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" class="svg" src="logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+
+      <div class="content">
+        <div class="actionbar">
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="vmagicmirror-サブキャラ機能">VMagicMirror サブキャラ機能</h1>
+
+<div class="NOTE">
+<h5>Note</h5>
+<p>このドキュメントは現時点で日本語版のみを提供しています。英語のページも整備予定ですが、直近で日本語以外で本ドキュメントを参照する場合には、ブラウザの翻訳機能などをご使用下さい。</p>
+</div>
+<h2 id="はじめに">はじめに</h2>
+<p>このウェブページは <a href="https://malaybaku.github.io/VMagicMirror/">VMagicMirror</a> v4.0.0で導入されたサブキャラ機能 (Buddy機能) の導入方法や、サブキャラ機能のスクリプトで利用できるAPIリファレンスを紹介するページです。</p>
+<p>VMagicMirror自体の基本的な機能や使い方については <a href="https://malaybaku.github.io/VMagicMirror/">メインのドキュメントページ</a> で確認できます。</p>
+<p>とくに、サブキャラを自作せずに既存のサブキャラを使う場合は先に <a href="https://malaybaku.github.io/VMagicMirror/docs/buddy">基本的なサブキャラの使用方法のページ</a> を確認し、必要に応じて本ドキュメントも参照してください。</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>このドキュメントはv4.0.0のリリース (2025/05/31) にあわせて公開していますが、ドキュメンテーションは整備中です。とくに、実装の手がかりになるサブキャラのテンプレート整備が不十分なため、現行のドキュメントに基づくサブキャラの自作には高度なスキルが必要になります。
+スクリプトの自作が不要、あるいは一部の改変のみで利用できるようなサブキャラのテンプレートについては別途公開を予定しています。</p>
+</div>
+<h2 id="このドキュメントのコンテンツ">このドキュメントのコンテンツ</h2>
+<p>サブキャラの作成や配布を検討しており、このページを初めて読んでいる場合、 <a class="xref" href="docs/getting-started.html">Getting Started</a> を確認してください。</p>
+<p>それ以外の場合、目的に応じたページを確認します。</p>
+<ul>
+<li>サブキャラの基本設定を編集する: <a class="xref" href="docs/buddy-manifest.html">Buddy Manifest</a></li>
+<li>サブキャラのスクリプトを作成する: <a class="xref" href="docs/write-buddy-script.html">Write Buddy Script</a></li>
+<li>サブキャラのデバッグ方法を確認する: <a class="xref" href="docs/debug-buddy.html">Debug Buddy</a></li>
+</ul>
+<p>とくに、下記はリファレンスとなるページです。</p>
+<ul>
+<li>サブキャラに対する基本設定の一覧を知りたい: <a class="xref" href="refs/manifest-json-references.html">manifest reference</a></li>
+<li>スクリプトから利用できるAPI一覧を知りたい: <a class="xref" href="api/VMagicMirror.Buddy.html">API</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/index.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

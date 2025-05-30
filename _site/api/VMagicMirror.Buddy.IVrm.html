@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IVrm | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IVrm | VMagicMirror Buddy ">
+      
+      <meta name="description" content="サブキャラとしてVRMのロードと操作を行うAPIです。 本APIは作成途上のものであり、VMagicMirror v4.0.0の時点では本APIは利用できません。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.IVrm">
+
+
+
+  <h1 id="VMagicMirror_Buddy_IVrm" data-uid="VMagicMirror.Buddy.IVrm" class="text-break">
+Interface IVrm  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>サブキャラとしてVRMのロードと操作を行うAPIです。
+本APIは作成途上のものであり、VMagicMirror v4.0.0の時点では本APIは利用できません。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IVrm</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 id="VMagicMirror_Buddy_IVrm_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>
+本APIはVRMのロードと操作を行うためのAPIです。
+VMagicMirror v4.0.0の時点では機能整備が完了していないため、本APIの利用手段は提供していません。
+ここでは、想定している機能を提示する目的でドキュメントを公開しています。
+</p>
+<p>
+VRMやGLBによる3Dオブジェクトをサブキャラとして表示する機能は、 v4.0.0 以降のマイナーアップデートとして提供予定です。
+</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IVrm_Transform_" data-uid="VMagicMirror.Buddy.IVrm.Transform*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_Transform" data-uid="VMagicMirror.Buddy.IVrm.Transform">
+  Transform
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オブジェクトの基本姿勢に関する値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ITransform3D Transform { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.ITransform3D.html">ITransform3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IVrm_GetBlendShape_" data-uid="VMagicMirror.Buddy.IVrm.GetBlendShape*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_GetBlendShape_System_String_System_Boolean_" data-uid="VMagicMirror.Buddy.IVrm.GetBlendShape(System.String,System.Boolean)">
+  GetBlendShape(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロードしたモデルについて、ブレンドシェイプの現在値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float GetBlendShape(string name, bool customClip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>customClip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>VRM1.0の標準ブレンドシェイプの値を取得する場合は <code>false</code>、カスタムのブレンドシェイプの値を取得する場合は <code>true</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>現在適用されているブレンドシェイプの値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_GetBlendShape_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>指定したブレンドシェイプがモデルに存在しない場合、この関数は <code>0</code> を返します。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_GetCustomBlendShapeNames_" data-uid="VMagicMirror.Buddy.IVrm.GetCustomBlendShapeNames*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_GetCustomBlendShapeNames" data-uid="VMagicMirror.Buddy.IVrm.GetCustomBlendShapeNames">
+  GetCustomBlendShapeNames()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>モデルに定義されたカスタムブレンドシェイプの名称の一覧を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string[] GetCustomBlendShapeNames()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_HasBlendShape_" data-uid="VMagicMirror.Buddy.IVrm.HasBlendShape*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_HasBlendShape_System_String_" data-uid="VMagicMirror.Buddy.IVrm.HasBlendShape(System.String)">
+  HasBlendShape(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロードしたモデルに指定した名称のカスタムブレンドシェイプが存在するかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasBlendShape(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>カスタムブレンドシェイプの名称</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>指定した名称のカスタムブレンドシェイプが存在すれば <code>true</code>、そうでなければ<code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_Hide_" data-uid="VMagicMirror.Buddy.IVrm.Hide*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_Hide" data-uid="VMagicMirror.Buddy.IVrm.Hide">
+  Hide()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>モデルを非表示にします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Hide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_LoadAsync_" data-uid="VMagicMirror.Buddy.IVrm.LoadAsync*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_LoadAsync_System_String_" data-uid="VMagicMirror.Buddy.IVrm.LoadAsync(System.String)">
+  LoadAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ファイルパスを指定してVRMをロードします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task LoadAsync(string path)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>VRMのファイルパス</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_LoadPresetAsync_" data-uid="VMagicMirror.Buddy.IVrm.LoadPresetAsync*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_LoadPresetAsync_System_String_" data-uid="VMagicMirror.Buddy.IVrm.LoadPresetAsync(System.String)">
+  LoadPresetAsync(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>名称を指定してプリセットVRMをロードします。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task LoadPresetAsync(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_LoadPresetAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>プリセットVRMとは、アプリケーション本体に組み込まれたVRMのことです。
+このメソッドでVRMをロードする場合、事前にVRMを用意する必要はありません。</p>
+<p>v4.0.0では <code class="paramref">name</code> に指定できる値は <code>&quot;A&quot;</code> のみです。
+これ以外の名称を指定した場合、 <a class="xref" href="VMagicMirror.Buddy.IVrm.html#VMagicMirror_Buddy_IVrm_LoadAsync_System_String_">LoadAsync(string)</a> で存在しないファイルを指定した場合と同様のエラーになります。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_RunVrma_" data-uid="VMagicMirror.Buddy.IVrm.RunVrma*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_RunVrma_VMagicMirror_Buddy_IVrmAnimation_System_Boolean_System_Boolean_" data-uid="VMagicMirror.Buddy.IVrm.RunVrma(VMagicMirror.Buddy.IVrmAnimation,System.Boolean,System.Boolean)">
+  RunVrma(IVrmAnimation, bool, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>VRM Animationを再生します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RunVrma(IVrmAnimation animation, bool loop, bool immediate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>animation</code> <a class="xref" href="VMagicMirror.Buddy.IVrmAnimation.html">IVrmAnimation</a></dt>
+    <dd><p>対象になるVRM Animation</p>
+</dd>
+    <dt><code>loop</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>VRM Animationをループ実行したい場合は <code>true</code>、そうでなければ<code>false</code></p>
+</dd>
+    <dt><code>immediate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>補間を行わずにただちに指定したアニメーションを再生する場合は <code>true</code>、現在のポーズとの補間を行う場合は <code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_RunVrma_VMagicMirror_Buddy_IVrmAnimation_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>v4.0.0の時点では <code class="paramref">immediate</code> オプションの値によらず、補間を行わない動作が適用されます。
+このフラグは将来のバージョンで参照されるようになります。
+バージョンアップによる挙動変更を避けたい場合、 <code class="paramref">immediate</code> の値としては <code>true</code> を指定してください。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_SetBlendShape_" data-uid="VMagicMirror.Buddy.IVrm.SetBlendShape*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_SetBlendShape_System_String_System_Boolean_System_Single_" data-uid="VMagicMirror.Buddy.IVrm.SetBlendShape(System.String,System.Boolean,System.Single)">
+  SetBlendShape(string, bool, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロードしたモデルについて、ブレンドシェイプの値を適用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetBlendShape(string name, bool customClip, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ブレンドシェイプの名称</p>
+</dd>
+    <dt><code>customClip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>VRM1.0の標準ブレンドシェイプに値を適用する場合は <code>false</code>、カスタムのブレンドシェイプに適用する場合は <code>true</code></p>
+</dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>適用するブレンドシェイプの値。 [0, 1] の範囲で指定します</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_SetBlendShape_System_String_System_Boolean_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>指定したブレンドシェイプがモデルに存在しない場合、この関数を呼んでも何も起こりません。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_SetBoneRotation_" data-uid="VMagicMirror.Buddy.IVrm.SetBoneRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_SetBoneRotation_VMagicMirror_Buddy_HumanBodyBones_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.IVrm.SetBoneRotation(VMagicMirror.Buddy.HumanBodyBones,VMagicMirror.Buddy.Quaternion)">
+  SetBoneRotation(HumanBodyBones, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ボーンのローカル回転を設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetBoneRotation(HumanBodyBones bone, Quaternion localRotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a></dt>
+    <dd><p>回転を設定するボーン</p>
+</dd>
+    <dt><code>localRotation</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>ボーンのローカル回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_SetBoneRotation_VMagicMirror_Buddy_HumanBodyBones_VMagicMirror_Buddy_Quaternion__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>指定したボーンが任意ボーンであり、そのボーンが存在しない場合、この関数を呼び出しても何も起こりません。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_SetBoneRotations_" data-uid="VMagicMirror.Buddy.IVrm.SetBoneRotations*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_SetBoneRotations_System_Collections_Generic_IReadOnlyDictionary_VMagicMirror_Buddy_HumanBodyBones_VMagicMirror_Buddy_Quaternion__" data-uid="VMagicMirror.Buddy.IVrm.SetBoneRotations(System.Collections.Generic.IReadOnlyDictionary{VMagicMirror.Buddy.HumanBodyBones,VMagicMirror.Buddy.Quaternion})">
+  SetBoneRotations(IReadOnlyDictionary&lt;HumanBodyBones, Quaternion&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロードしたモデルについて、ボーンのローカル回転を一括で適用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetBoneRotations(IReadOnlyDictionary&lt;HumanBodyBones, Quaternion&gt; localRotations)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localRotations</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;<a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a>, <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a>&gt;</dt>
+    <dd><p>回転を適用したいボーンをキー、ローカル回転を値としたディクショナリ</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_SetBoneRotations_System_Collections_Generic_IReadOnlyDictionary_VMagicMirror_Buddy_HumanBodyBones_VMagicMirror_Buddy_Quaternion___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>ボーン回転を更新したくないボーンについては、キーを含めないようにします。
+任意ボーンについて、モデルに該当するボーンが存在しない場合、その値は無視されます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_SetHipsLocalPosition_" data-uid="VMagicMirror.Buddy.IVrm.SetHipsLocalPosition*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_SetHipsLocalPosition_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.IVrm.SetHipsLocalPosition(VMagicMirror.Buddy.Vector3)">
+  SetHipsLocalPosition(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロードしたモデルについて、Hipsボーンの位置をローカル座標扱いで指定してモデルの現在位置を更新します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetHipsLocalPosition(Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>Hipsボーンの位置</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_SetHipsLocalPosition_VMagicMirror_Buddy_Vector3__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="VMagicMirror.Buddy.ITransform3D.html#VMagicMirror_Buddy_ITransform3D_SetParent_VMagicMirror_Buddy_IReadOnlyTransform3D_">SetParent(IReadOnlyTransform3D)</a> などで親オブジェクトを指定している場合、
+<code class="paramref">position</code> は親要素に対するローカルな位置として扱われます。
+そうでない場合、<code class="paramref">position</code> はワールド座標の位置として扱われます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_SetHipsPosition_" data-uid="VMagicMirror.Buddy.IVrm.SetHipsPosition*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_SetHipsPosition_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.IVrm.SetHipsPosition(VMagicMirror.Buddy.Vector3)">
+  SetHipsPosition(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロードしたモデルについて、Hipsボーンの位置をワールド座標扱いで指定してモデルの現在位置を更新します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetHipsPosition(Vector3 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>Hipsボーンの位置</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_SetMuscles_" data-uid="VMagicMirror.Buddy.IVrm.SetMuscles*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_SetMuscles_System_Nullable_System_Single____" data-uid="VMagicMirror.Buddy.IVrm.SetMuscles(System.Nullable{System.Single}[])">
+  SetMuscles(float?[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ロードしたモデルについて、モデルの姿勢をMuscle値ベースで適用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SetMuscles(float?[] muscles)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>muscles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?[]</dt>
+    <dd><p>Muscle値の一覧</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_SetMuscles_System_Nullable_System_Single_____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この関数はUnityのHumanoidの仕様を十分理解している場合に、効率的に姿勢を適用する目的で使用します。
+<code class="paramref">muscles</code> は長さが <code>95</code> の配列であるのが期待値です。
+muscleの一部のみを更新する場合、更新したいmuscleの値のみを有効な値とし、それ以外は <code>null</code> にします。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_Show_" data-uid="VMagicMirror.Buddy.IVrm.Show*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_Show" data-uid="VMagicMirror.Buddy.IVrm.Show">
+  Show()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="VMagicMirror.Buddy.IVrm.html#VMagicMirror_Buddy_IVrm_LoadAsync_System_String_">LoadAsync(string)</a> でロードしたモデルを表示します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Show()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IVrm_StopVrma_" data-uid="VMagicMirror.Buddy.IVrm.StopVrma*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IVrm_StopVrma_System_Boolean_" data-uid="VMagicMirror.Buddy.IVrm.StopVrma(System.Boolean)">
+  StopVrma(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="VMagicMirror.Buddy.IVrm.html#VMagicMirror_Buddy_IVrm_RunVrma_VMagicMirror_Buddy_IVrmAnimation_System_Boolean_System_Boolean_">RunVrma(IVrmAnimation, bool, bool)</a> で再生したVRM Animationを停止します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void StopVrma(bool immediate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>immediate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>補間を行わずにただちに停止させる場合は <code>true</code>、現在のポーズとの補間を行いながら停止させる場合は <code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IVrm_StopVrma_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>VRM Animationを再生していない状態でこの関数を呼び出した場合、何も起こりません。</p>
+<p>v4.0.0の時点では <code class="paramref">immediate</code> オプションの値によらず、補間を行わない動作が適用されます。
+このフラグは将来のバージョンで参照されるようになります。
+バージョンアップによる挙動変更を避けたい場合、 <code class="paramref">immediate</code> の値としては <code>true</code> を指定してください。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

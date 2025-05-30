@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAvatarMotionEvent | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAvatarMotionEvent | VMagicMirror Buddy ">
+      
+      <meta name="description" content="アバターの動作をイベントとして検出できるAPIです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.IAvatarMotionEvent">
+
+
+
+  <h1 id="VMagicMirror_Buddy_IAvatarMotionEvent" data-uid="VMagicMirror.Buddy.IAvatarMotionEvent" class="text-break">
+Interface IAvatarMotionEvent  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>アバターの動作をイベントとして検出できるAPIです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAvatarMotionEvent</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="VMagicMirror_Buddy_IAvatarMotionEvent_OnArcadeStickButtonDown" data-uid="VMagicMirror.Buddy.IAvatarMotionEvent.OnArcadeStickButtonDown">
+  OnArcadeStickButtonDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターがアーケードスティックを操作するモーションを行う状態であり、かつゲームパッドのボタンが押し下げられると発火します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;GamepadButton&gt; OnArcadeStickButtonDown</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="VMagicMirror.Buddy.GamepadButton.html">GamepadButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_IAvatarMotionEvent_OnGamepadButtonDown" data-uid="VMagicMirror.Buddy.IAvatarMotionEvent.OnGamepadButtonDown">
+  OnGamepadButtonDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターがゲームパッドを操作するモーションを行う状態であり、かつゲームパッドのボタンが押し下げられると発火します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;GamepadButton&gt; OnGamepadButtonDown</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="VMagicMirror.Buddy.GamepadButton.html">GamepadButton</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_IAvatarMotionEvent_OnKeyboardKeyDown" data-uid="VMagicMirror.Buddy.IAvatarMotionEvent.OnKeyboardKeyDown">
+  OnKeyboardKeyDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターがキーボードを打鍵するモーションを行う状態になっており、実際に打鍵モーションを開始した場合に発火します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;string&gt; OnKeyboardKeyDown</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarMotionEvent_OnKeyboardKeyDown_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+キー名はENTERキーの打鍵時に <code>"Enter"</code> を引数とします。
+それ以外のキーについては、打鍵時してもキー名は特定できず、空文字列が引数となります。
+</p>
+<p>
+ユーザーが打鍵をランダム表示するオプションを有効にしている場合、常に空文字列が引数になります。
+</p>
+</div>
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_IAvatarMotionEvent_OnPenTabletMouseButtonDown" data-uid="VMagicMirror.Buddy.IAvatarMotionEvent.OnPenTabletMouseButtonDown">
+  OnPenTabletMouseButtonDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターがペンタブレットを操作するモーションを行う状態であり、かつペンタブレットのクリック動作を開始したときに発火します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action OnPenTabletMouseButtonDown</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarMotionEvent_OnPenTabletMouseButtonDown_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このイベントではマウスのどのボタンに対してイベントが発火したかは公開されません。</p>
+</div>
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_IAvatarMotionEvent_OnTouchPadMouseButtonDown" data-uid="VMagicMirror.Buddy.IAvatarMotionEvent.OnTouchPadMouseButtonDown">
+  OnTouchPadMouseButtonDown
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターがタッチパッド (マウスパッド) を操作するモーションを行う状態であり、かつマウスのクリック動作を開始したときに発火します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action OnTouchPadMouseButtonDown</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarMotionEvent_OnTouchPadMouseButtonDown_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このイベントではマウスのどのボタンに対してイベントが発火したかは公開されません。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>manifest.jsonでサブキャラの基本設定を定義する | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="manifest.jsonでサブキャラの基本設定を定義する | VMagicMirror Buddy ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/docs/buddy-manifest.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="doc-buddy-manifest">
+<h1 id="manifestjsonでサブキャラの基本設定を定義する">manifest.jsonでサブキャラの基本設定を定義する</h1>
+
+<p>サブキャラ機能は動作を記述する <code>main.csx</code> スクリプトと基本設定を定義する <code>manifest.json</code> ファイルを最小限の構成要素としています。</p>
+<p>本ページでは <code>manifest.json</code> の定義方法の例を紹介します。</p>
+<h2 id="例-2d画像を表示するmanifestjson">例: 2D画像を表示するmanifest.json</h2>
+<p>同時に最大1つまでの2D画像を表示するようなサブキャラでは、次のような <code>manifest.json</code> を作成します。
+この例は <a class="xref" href="getting-started.html">Getting Started</a> で紹介している <a href="../static/BuddySample.zip">BuddySample.zip</a> に含まれるものとほぼ同様です。</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>下記で <code>//</code> から始まる行は実際のJSONには含まれないコメントです。</p>
+</div>
+<pre><code>{
+  // com.company.name のフォーマットで、サブキャラを一意に特定できるような名称を指定します。
+  &quot;id&quot;: &quot;com.developerName.buddySample&quot;,
+  // GUI上に表示されるサブキャラの名称を日本語、および英語で指定しておきます。
+  &quot;displayName&quot;: {
+    &quot;ja&quot;: &quot;サブキャラのサンプル&quot;,
+    &quot;en&quot;: &quot;Buddy Example&quot;
+  },
+  // 制作者の名前を指定します。
+  &quot;creator&quot;: &quot;CreatorName&quot;,
+  // バージョン値を指定します。
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  // 制作者に関するURLを指定します。
+  &quot;creatorUrl&quot;: &quot;https://example.com&quot;,
+  // GUI上に表示されるサブキャラの設定項目の一覧を定義します。
+  &quot;property&quot;: [
+    // この例では type が transform2Dであるようなデータ、つまり2次元平面上での位置やサイズが編集できるオブジェクトを定義しています。
+    {
+      &quot;name&quot;: &quot;mainImage&quot;,
+      // 個別のプロパティをGUI上で表示する際の表示名も日本語、および英語で指定します。
+      &quot;displayName&quot;:
+      {
+        &quot;ja&quot;: &quot;メイン画像&quot;,
+        &quot;en&quot;: &quot;Main Image&quot;
+      },
+      // プロパティのデータの種類を指定します。 
+      &quot;type&quot;: &quot;transform2D&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h2 id="実際に使用されるデータについて">実際に使用されるデータについて</h2>
+<p>VMagicMirror v4.0.0の時点では <code>displayName</code> および <code>property</code> が有効なデータとして使用されています。</p>
+<p>これ以外のプロパティは、将来的にサブキャラの更新や適宜webページへの動線を追加することを目的として定義しています。</p>
+<p>VMagicMirror v4.0.0の時点では使用していませんが、実体に応じた値を定義することを推奨しています。</p>
+<h2 id="プロパティの定義とスクリプトでの取得">プロパティの定義とスクリプトでの取得</h2>
+<p>プロパティ一覧にデータを追加で定義することで、エンドユーザーが値を編集できるUIが追加されます。</p>
+<pre><code>  &quot;property&quot;: [
+    {
+      &quot;name&quot;: &quot;mainImage&quot;,
+      ...
+    },
+    {
+      &quot;name&quot;: &quot;flip&quot;,
+      &quot;displayName&quot;:
+       {
+         &quot;ja&quot;: &quot;画像を左右反転&quot;,
+         &quot;en&quot;: &quot;Flip Horizontal&quot;
+       },
+      &quot;type&quot;: &quot;bool&quot;
+    }
+  ]
+</code></pre>
+<p>プロパティの定義順はそのままGUI上での表示順として反映されます。</p>
+<p>とくに、 <code>type</code> には様々な型のデータが指定でき、それぞれのデータに対応したGUIが提示できます。指定した <code>type</code> に応じて、<code>main.csx</code> スクリプトから対応するメソッドを呼び出すことで、ユーザーがGUI上で指定した値を取得できます。</p>
+<ul>
+<li><code>bool</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_GetBool_System_String_">Api.Property.GetBool</a></li>
+<li><code>int</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_GetInt_System_String_">Api.Property.GetInt</a></li>
+<li><code>float</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_GetFloat_System_String_">Api.Property.GetFloat</a></li>
+<li><code>string</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_GetString_System_String_">Api.Property.GetString</a></li>
+<li><code>vector2</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_GetVector2_System_String_">Api.Property.GetVector2</a></li>
+<li><code>vector3</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_GetVector3_System_String_">Api.Property.GetVector3</a></li>
+<li><code>quaternion</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_GetQuaternion_System_String_">Api.Property.GetQuaternion</a></li>
+<li><code>transform2D</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IManifestTransforms.html#VMagicMirror_Buddy_IManifestTransforms_GetTransform2D_System_String_">Api.Transforms.GetTransform2D</a></li>
+<li><code>transform3D</code> : <a class="xref" href="../api/VMagicMirror.Buddy.IManifestTransforms.html#VMagicMirror_Buddy_IManifestTransforms_GetTransform3D_System_String_">Api.Transforms.GetTransform3D</a></li>
+</ul>
+<p>なお、<code>type</code> には <code>action</code> という特殊な値も指定できます。 <code>action</code> については次のセクションで紹介します。</p>
+<h2 id="actionプロパティ">actionプロパティ</h2>
+<p>プロパティに <code>type</code> が <code>action</code> であるようなプロパティを定義すると、プロパティに対応する編集可能なデータはとくに追加されない変わり、GUI上にボタンが提示されます。</p>
+<pre><code>  &quot;property&quot;: [
+    {
+      ...
+    },
+    {
+      &quot;name&quot;: &quot;jumpAction&quot;,
+      &quot;displayName&quot;:
+       {
+         &quot;ja&quot;: &quot;ジャンプ&quot;,
+         &quot;en&quot;: &quot;Jump&quot;
+       },
+      &quot;type&quot;: &quot;action&quot;
+    }
+  ]
+</code></pre>
+<p>上記の例では <code>ジャンプ</code> という名称のボタンが表示されます。このボタンを押下したことは <a class="xref" href="../api/VMagicMirror.Buddy.IProperty.html#VMagicMirror_Buddy_IProperty_ActionRequested">Api.Property.ActionRequested</a> イベントとしてスクリプトで検出できて、引数には <code>name</code> の名称が渡されます。</p>
+<p>たとえば、ボタンを押すことでジャンプを行うようなリアクションが以下のように実装できます。</p>
+<pre><code class="lang-csharp">var sprite = Api.Create2DSprite();
+
+...
+
+Api.Property.ActionRequested += actionName =&gt; 
+{
+  if (actionName == &quot;jumpAction)
+  {
+    sprite.Effects.Jump.Jump(0.5f, 24f, 1);
+  }
+}
+</code></pre>
+<h2 id="アプリケーションの実行中にmanifestjsonを変更して適用する方法">アプリケーションの実行中にmanifest.jsonを変更して適用する方法</h2>
+<p><code>manifest.json</code> は原則としてVMagicMirror自体のアプリケーション起動時に1回だけ読み込まれます。</p>
+<p><a class="xref" href="debug-buddy.html">開発者モード</a> を有効にすると、個別のサブキャラに対して <code>manifest.json</code> を含めたサブキャラの再読み込みを実行するUIが追加で表示されます。</p>
+<p>もしアプリケーションを実行しながらプロパティ一覧の変更をチェックしたい場合、 <a class="xref" href="debug-buddy.html">開発者モード</a> の説明も参考にしながら、開発者モードで作業を行って下さい。</p>
+<h2 id="リファレンスについて">リファレンスについて</h2>
+<p>とくにプロパティ定義について、本ページでは網羅的な説明は行っていません。</p>
+<p><code>manifest.json</code> で定義できるデータの一覧については <a class="xref" href="../refs/manifest-json-references.html">manifest.jsonのリファレンス</a> を参照して下さい。</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/docs/buddy-manifest.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

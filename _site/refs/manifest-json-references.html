@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>manifest reference | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="manifest reference | VMagicMirror Buddy ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/refs/manifest-json-references.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="ref-manifest-json">
+<h1 id="manifest-reference">manifest reference</h1>
+
+<p>このページでは、サブキャラの基本設定を行う <code>manifest.json</code> に定義可能な値の一覧を記載します。</p>
+<p>JSON全体の例については <a class="xref" href="../docs/buddy-manifest.html">サブキャラの基本設定を定義する</a> 等を参照して下さい。</p>
+<h2 id="基本データ">基本データ</h2>
+<p>基本データはいずれも定義が必須の項目です。</p>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td>string</td>
+<td>一意な識別子。パッケージやアセットの識別に使用します。</td>
+</tr>
+<tr>
+<td><code>displayName</code></td>
+<td>object</td>
+<td>表示名。GUI上で表示されます。</td>
+</tr>
+<tr>
+<td><code>creator</code></td>
+<td>string</td>
+<td>作成者名です。</td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>string</td>
+<td>バージョン番号です。</td>
+</tr>
+<tr>
+<td><code>creatorUrl</code></td>
+<td>string</td>
+<td>作成者のWebページやSNSなどへのリンクです。</td>
+</tr>
+<tr>
+<td><code>property</code></td>
+<td>array</td>
+<td>プロパティ一覧です。 (後述)</td>
+</tr>
+</tbody>
+</table>
+<p><code>id</code> は <code>com.team.buddyName</code> のような形式で定義することを推奨していますが、必須ではありません。</p>
+<p><code>displayName</code> では <code>ja</code>と<code>en</code>をキーとしたローカライズ文字列です。</p>
+<pre><code>&quot;displayName&quot;: {
+  &quot;ja&quot;: &quot;日本語のラベル&quot;,
+  &quot;en&quot;: &quot;English Label&quot;
+}
+</code></pre>
+<h2 id="プロパティ定義">プロパティ定義</h2>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>name</code></td>
+<td>string</td>
+<td>プロパティ名です。スクリプトからプロパティ値を取得するときのキーとして使用します。</td>
+</tr>
+<tr>
+<td><code>displayName</code></td>
+<td>object</td>
+<td>GUI上に表示される名称です。</td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>object</td>
+<td>有効なデータを指定した場合、ヘルプアイコンを通じて追加説明を提示します。</td>
+</tr>
+<tr>
+<td><code>type</code></td>
+<td>string</td>
+<td>プロパティの種類です。(後述)</td>
+</tr>
+<tr>
+<td><code>boolData</code></td>
+<td>object</td>
+<td><code>type</code> が <code>bool</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>intData</code></td>
+<td>object</td>
+<td><code>type</code> が <code>int</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>floatData</code></td>
+<td>object</td>
+<td><code>type</code> が <code>float</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>stringData</code></td>
+<td>object</td>
+<td><code>type</code> が <code>string</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>vector2Data</code></td>
+<td>object</td>
+<td><code>type</code> が <code>vector2</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>vector3Data</code></td>
+<td>object</td>
+<td><code>type</code> が <code>vector3</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>quaternionData</code></td>
+<td>object</td>
+<td><code>type</code> が <code>quaternion</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>transform2DData</code></td>
+<td>object</td>
+<td><code>type</code> が <code>transform2D</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+<tr>
+<td><code>transform3DData</code></td>
+<td>object</td>
+<td><code>type</code> が <code>transform3D</code> の場合のプロパティの詳細を指定します。</td>
+</tr>
+</tbody>
+</table>
+<p><code>name</code>, <code>type</code> は必須であり、それ以外の値は省略可能です。</p>
+<p><code>displayName</code>, <code>description</code> はいずれも <code>ja</code>, <code>en</code>をキーとするローカライズ文字列です。</p>
+<pre><code>&quot;displayName&quot;: {
+  &quot;ja&quot;: &quot;日本語のラベル&quot;,
+  &quot;en&quot;: &quot;English Label&quot;
+}
+</code></pre>
+<p><code>type</code> では以下のいずれかの値を指定します。</p>
+<ul>
+<li><code>bool</code></li>
+<li><code>int</code></li>
+<li><code>float</code></li>
+<li><code>string</code></li>
+<li><code>vector2</code></li>
+<li><code>vector3</code></li>
+<li><code>quaternion</code></li>
+<li><code>transform2D</code></li>
+<li><code>transform3D</code></li>
+<li><code>action</code></li>
+</ul>
+<p>以降のセクションでは <code>type</code> に応じたデータ定義の例を個別に示します。いずれのデータも省略可能です。</p>
+<h3 id="booldata"><code>boolData</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>bool</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>boolData</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値が <code>false</code> であるものとして扱われます。</p>
+<h3 id="intdata"><code>intData</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>int</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+<tr>
+<td><code>min</code></td>
+<td>int</td>
+<td>ユーザーに最小値/最大値つきのUIを提示するときの最小値です。</td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td>int</td>
+<td>ユーザーに最小値/最大値つきのUIを提示するときの最大です。</td>
+</tr>
+<tr>
+<td><code>enumOptions</code></td>
+<td>[string]</td>
+<td>ユーザーにドロップダウンとしてオプションを提示する場合の、各オプションの名称です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>intData</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値が <code>0</code> であるものとして扱われます。</p>
+<p>その他のオプションは以下の性質を持ちます。</p>
+<ul>
+<li><code>min</code> / <code>max</code> を双方とも定義した場合、GUI上にはスライダーUIが表示されます。</li>
+<li><code>enumOptions</code> を定義した場合、GUI上には複数の選択肢から選べるようなドロップダウンUIが表示されます。
+<ul>
+<li>このとき、実際の int の値としては、ドロップダウンの最初の項目から順に <code>0</code>, <code>1</code>, <code>2</code>, ... の値が適用されます。</li>
+</ul>
+</li>
+</ul>
+<h3 id="floatdata"><code>floatData</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>float</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+<tr>
+<td><code>min</code></td>
+<td>float</td>
+<td>ユーザーに最小値/最大値つきのUIを提示するときの最小値です。</td>
+</tr>
+<tr>
+<td><code>max</code></td>
+<td>float</td>
+<td>ユーザーに最小値/最大値つきのUIを提示するときの最大です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>floatData</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値が <code>0</code> であるものとして扱われます。</p>
+<p>その他のオプションは以下の性質を持ちます。</p>
+<ul>
+<li><code>min</code> / <code>max</code> を双方とも定義した場合、GUI上にはスライダーUIが表示されます。</li>
+</ul>
+<h3 id="stringdata"><code>stringData</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>float</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+<tr>
+<td><code>isFilePath</code></td>
+<td>bool</td>
+<td>このプロパティをファイルパス扱いしたい場合、true を指定します。</td>
+</tr>
+</tbody>
+</table>
+<p><code>stringData</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値が空文字列 <code>&quot;&quot;</code> であるものとして扱われます。</p>
+<p>その他のオプションは以下の性質を持ちます。</p>
+<ul>
+<li><code>isFilePath</code> に <code>true</code> を指定した場合、UI上ではテキスト編集に加えて、ファイル選択ダイアログを表示するボタンを追加で表示します。</li>
+</ul>
+<h3 id="vector2data"><code>vector2Data</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>object</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>vector2Data</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値がゼロベクトルとして扱われます。</p>
+<p><code>defaultValue</code>は <code>x</code>, <code>y</code>をキーとした値で指定します。</p>
+<pre><code>{
+  &quot;x&quot;: 1.0,
+  &quot;y&quot;: 2.0
+}
+</code></pre>
+<h3 id="vector3data"><code>vector3Data</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>object</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>vector3Data</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値がゼロベクトルとして扱われます。</p>
+<p><code>defaultValue</code>は <code>x</code>, <code>y</code>, <code>z</code>をキーとした値で指定します。</p>
+<pre><code>{
+  &quot;x&quot;: 1.0,
+  &quot;y&quot;: 2.0,
+  &quot;y&quot;: 2.0
+}
+</code></pre>
+<h3 id="quaterniondata"><code>quaternionData</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>object</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>quaternionData</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値は回転を行わないようなクォータニオンとして扱われます。</p>
+<p><code>defaultValue</code>は <code>x</code>, <code>y</code>, <code>z</code>をキーとした値で指定します。この値は、YXZの順で回転を行うオイラー角の角度(deg)として指定します。</p>
+<pre><code>{
+  &quot;x&quot;: 10.0,
+  &quot;y&quot;: 20.0,
+  &quot;z&quot;: 30.0
+}
+</code></pre>
+<h3 id="transform2ddata"><code>transform2DData</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>object</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>transform2DData</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値として画面にある程度収まるような適当な数値が指定されているように扱われます。</p>
+<p><code>defaultValue</code>は以下のような構造のobjectです。</p>
+<ul>
+<li><code>position</code>: デフォルトの位置を <code>x</code> と <code>y</code> を指定します。座標は、アバターウィンドウ全体のサイズがおおよそ 1280x720 であり、左下を (0, 0) であるとしたときの座標で指定します。</li>
+<li><code>rotation</code>: 回転をオイラー角表現として <code>x</code>, <code>y</code>, <code>z</code> で指定します。通常、2Dの画像では全ての値を0のままにするか、または<code>z</code>を指定することで画像を回転させた状態をデフォルトにできます。</li>
+<li><code>scale</code>: スケールです。省略すると 1 として扱われます。</li>
+</ul>
+<pre><code>{
+  &quot;position&quot;: {
+    &quot;x&quot;: 300,
+    &quot;y&quot;: 100
+  },
+  &quot;rotationn&quot;: {
+    &quot;x&quot;: 0.0,
+    &quot;y&quot;: 0.0,
+    &quot;z&quot;: 20.0
+  },
+  &quot;scale&quot;: 1
+}
+</code></pre>
+<h3 id="transform3ddata"><code>transform3DData</code></h3>
+<table>
+<thead>
+<tr>
+<th>フィールド名</th>
+<th>型</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>defaultValue</code></td>
+<td>object</td>
+<td>ユーザーが値を編集していないときのデフォルト値です。</td>
+</tr>
+</tbody>
+</table>
+<p><code>transform3DData</code> を省略するか、または <code>defaultValue</code> を省略した場合、デフォルト値として画面にある程度収まるような適当な数値が指定されているように扱われます。</p>
+<p><code>defaultValue</code>は以下のような構造のobjectです。</p>
+<ul>
+<li><code>parentBone</code>: <a class="xref" href="../api/VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a>の名称を指定することで、このTransformがアタッチされるメインアバターのボーンを指定します。</li>
+<li><code>position</code>: デフォルトの位置を <code>x</code>, <code>y</code>, <code>z</code> で指定します。この座標は、空間上のワールド座標の位置、またはとして扱われます。</li>
+<li><code>rotation</code>: 回転をオイラー角表現として <code>x</code>, <code>y</code>, <code>z</code> で指定します。</li>
+<li><code>scale</code>: スケールです。省略すると 1 として扱われます。</li>
+</ul>
+<pre><code>{
+  &quot;parentBone&quot;: &quot;Head&quot;,
+  &quot;position&quot;: {
+    &quot;x&quot;: 0.0,
+    &quot;y&quot;: 0.3,
+    &quot;z&quot;: 0.0
+  },
+  &quot;rotationn&quot;: {
+    &quot;x&quot;: 0.0,
+    &quot;y&quot;: 10.0,
+    &quot;z&quot;: 0.0
+  },
+  &quot;scale&quot;: 1
+}
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/refs/manifest-json-references.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

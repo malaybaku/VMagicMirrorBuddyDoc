@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>開発者モードを使ってサブキャラをデバッグする | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="開発者モードを使ってサブキャラをデバッグする | VMagicMirror Buddy ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/docs/debug-buddy.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="doc-debug-buddy">
+<h1 id="開発者モードを使ってサブキャラをデバッグする">開発者モードを使ってサブキャラをデバッグする</h1>
+
+<h2 id="開発者モード">開発者モード</h2>
+<p>VMagicMirrorの「サブキャラ」タブ上部から「開発者モード」をオンにできます。</p>
+<p>開発者モードをオンにすると以下の機能が利用できます。これらのGUI機能については <a href="https://malaybaku.github.io/VMagicMirror/docs/buddy/">メインドキュメントのBuddyに関するページ</a> も部分的に紹介しています。</p>
+<ul>
+<li>ログの出力レベルを変更できます。
+<ul>
+<li>開発者モードをオンにすると、重大なエラーに加えて軽微なエラーや警告のログも出力の対象となります。</li>
+<li>重大なエラーログのみを閲覧したい場合はログ詳細度を <code>Fatal</code> や <code>Error</code> にします。より多くのログを確認する場合、 <code>Info</code> や <code>Vervose</code> を選択します。</li>
+</ul>
+</li>
+<li>GUI上に直近のログは10件まで表示されます。
+<ul>
+<li>ただし、<a class="xref" href="../api/VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_Update">Api.Update</a> イベントに対してログ出力を行っているなど、高頻度にログを出力している場合、一部のログはGUIに表示されず欠落することがあります。この場合、前セクションで紹介したログファイルを直接開いてログを確認します。</li>
+</ul>
+</li>
+<li>個別のサブキャラについて、 <code>manifest.json</code> を編集した結果を適用したい場合に、 <code>再読み込み</code> ボタンによって再読み込みを実行できます。
+<ul>
+<li>開発者モードがオフの場合、<code>manifest.json</code> の変更を反映するにはVMagicMirrorアプリケーション自体の再起動が必要になることに注意して下さい。</li>
+</ul>
+</li>
+</ul>
+<h2 id="ログ出力apiとログファイルの閲覧方法">ログ出力APIとログファイルの閲覧方法</h2>
+<p>サブキャラのスクリプトでは、以下の関数を用いてログ出力を行えます。</p>
+<ul>
+<li><a class="xref" href="../api/VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_Log_System_String_">Api.Log</a></li>
+<li><a class="xref" href="../api/VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_LogWarning_System_String_">Api.LogWarning</a></li>
+<li><a class="xref" href="../api/VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_Log_System_String_">Api.LogError</a></li>
+</ul>
+<pre><code class="lang-csharp">using System;
+using VMagicMirror.Buddy;
+
+Api.Start += () =&gt; 
+{
+    Api.Log(&quot;通常のログ&quot;);
+    Api.LogWarning(&quot;警告ログ&quot;);
+    Api.LogError(&quot;エラーログ&quot;);
+}
+
+</code></pre>
+<p>この方法でログを出力するとき、前セクションで触れている開発者モードをオンにして、ログ詳細度を <code>Info</code> などのログが多く出力される設定に変更します。</p>
+<p>出力したログはGUIに加えて、 <code>(MyDocuments)\VMagicMirror_Files\Logs\Buddy\(サブキャラのフォルダ名).txt</code> のファイルパスにテキストとして出力されます。 <code>サブキャラのフォルダ名</code> は <code>main.csx</code> を配置しているフォルダの名称が使われます。</p>
+<h2 id="ログファイルが削除再生成されるタイミングについて">ログファイルが削除/再生成されるタイミングについて</h2>
+<p>上記の方法で取得できるログファイルについて、ログを含む <code>(MyDocuments)\VMagicMirror_Files\Logs\Buddy\</code> フォルダはVMagicMirrorを起動するタイミングでフォルダが一度削除され、新規のアプリケーション実行と対応するログファイルで上書きされます。</p>
+<p>ログファイルのバックアップを保存する場合、VMagicMirrorを終了後に、ログファイルを適当な別のフォルダにコピーしてください。</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/docs/debug-buddy.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

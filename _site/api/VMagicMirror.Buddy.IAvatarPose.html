@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAvatarPose | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAvatarPose | VMagicMirror Buddy ">
+      
+      <meta name="description" content="アバターの姿勢情報に関するAPIです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.IAvatarPose">
+
+
+
+  <h1 id="VMagicMirror_Buddy_IAvatarPose" data-uid="VMagicMirror.Buddy.IAvatarPose" class="text-break">
+Interface IAvatarPose  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>アバターの姿勢情報に関するAPIです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAvatarPose</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalPosition_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneGlobalPosition*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalPosition_VMagicMirror_Buddy_HumanBodyBones_System_Boolean_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneGlobalPosition(VMagicMirror.Buddy.HumanBodyBones,System.Boolean)">
+  GetBoneGlobalPosition(HumanBodyBones, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したボーンの位置をワールド座標で取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 GetBoneGlobalPosition(HumanBodyBones bone, bool useParentBone = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a></dt>
+    <dd><p>ボーン</p>
+</dd>
+    <dt><code>useParentBone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> を指定した場合、<code class="paramref">bone</code> で指定したボーンが存在しないと親ボーンの値を代わりに返します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>ボーンの位置</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalPosition_VMagicMirror_Buddy_HumanBodyBones_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+  アバターがロードされていない場合、この関数は <a class="xref" href="VMagicMirror.Buddy.Vector3.html#VMagicMirror_Buddy_Vector3_zero">zero</a> を返します。
+  また、任意ボーンがアバターに存在せず、かつ <code class="paramref">useParentBone</code> が <code>false</code> だった場合にも、この関数は <a class="xref" href="VMagicMirror.Buddy.Vector3.html#VMagicMirror_Buddy_Vector3_zero">zero</a> を返します。
+</p>
+<p>
+  <code class="paramref">useParentBone</code> が <code>true</code> の場合、任意ボーンがなければ有効な親ボーンまで遡ってボーン姿勢を返します。
+  例えば、親指ボーンがないアバターに対して <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html#VMagicMirror_Buddy_HumanBodyBones_LeftThumbProximal">LeftThumbProximal</a> を指定してこの関数を呼び出した場合、
+  左手首ボーンつまり <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html#VMagicMirror_Buddy_HumanBodyBones_LeftHand">LeftHand</a> のボーン位置を返します。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalRotation_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneGlobalRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalRotation_VMagicMirror_Buddy_HumanBodyBones_System_Boolean_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneGlobalRotation(VMagicMirror.Buddy.HumanBodyBones,System.Boolean)">
+  GetBoneGlobalRotation(HumanBodyBones, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したボーンの回転をワールド座標で取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Quaternion GetBoneGlobalRotation(HumanBodyBones bone, bool useParentBone = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a></dt>
+    <dd><p>ボーン</p>
+</dd>
+    <dt><code>useParentBone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> を指定した場合、<code class="paramref">bone</code> で指定したボーンが存在しないと親ボーンの値を代わりに返します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>ボーンの回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalRotation_VMagicMirror_Buddy_HumanBodyBones_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+  アバターがロードされていない場合、この関数は <a class="xref" href="VMagicMirror.Buddy.Quaternion.html#VMagicMirror_Buddy_Quaternion_identity">identity</a> を返します。
+  また、任意ボーンがアバターに存在せず、かつ <code class="paramref">useParentBone</code> が <code>false</code> だった場合にも、この関数は <a class="xref" href="VMagicMirror.Buddy.Quaternion.html#VMagicMirror_Buddy_Quaternion_identity">identity</a> を返します。
+</p>
+<p>
+  <code class="paramref">useParentBone</code> が <code>true</code> の場合、任意ボーンがなければ有効な親ボーンまで遡ってボーン姿勢を返します。
+  例えば、親指ボーンがないアバターに対して <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html#VMagicMirror_Buddy_HumanBodyBones_LeftThumbProximal">LeftThumbProximal</a> を指定してこの関数を呼び出した場合、
+  左手首ボーンつまり <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html#VMagicMirror_Buddy_HumanBodyBones_LeftHand">LeftHand</a> のボーン回転を返します。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarPose_GetBoneLocalPosition_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneLocalPosition*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarPose_GetBoneLocalPosition_VMagicMirror_Buddy_HumanBodyBones_System_Boolean_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneLocalPosition(VMagicMirror.Buddy.HumanBodyBones,System.Boolean)">
+  GetBoneLocalPosition(HumanBodyBones, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したボーンの位置をローカル座標で取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 GetBoneLocalPosition(HumanBodyBones bone, bool useParentBone = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a></dt>
+    <dd><p>ボーン</p>
+</dd>
+    <dt><code>useParentBone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> を指定した場合、<code class="paramref">bone</code> で指定したボーンが存在しないと親ボーンの値を代わりに返します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>ボーンの位置</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarPose_GetBoneLocalPosition_VMagicMirror_Buddy_HumanBodyBones_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>ローカル座標は親ボーンに対しての姿勢になります。
+<code class="paramref">useParentBone</code> が <code>true</code> である場合の挙動の詳細は <a class="xref" href="VMagicMirror.Buddy.IAvatarPose.html#VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalPosition_VMagicMirror_Buddy_HumanBodyBones_System_Boolean_">GetBoneGlobalPosition(HumanBodyBones, bool)</a> も参照してください。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarPose_GetBoneLocalRotation_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneLocalRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarPose_GetBoneLocalRotation_VMagicMirror_Buddy_HumanBodyBones_System_Boolean_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetBoneLocalRotation(VMagicMirror.Buddy.HumanBodyBones,System.Boolean)">
+  GetBoneLocalRotation(HumanBodyBones, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したボーンの回転をローカル座標で取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Quaternion GetBoneLocalRotation(HumanBodyBones bone, bool useParentBone = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a></dt>
+    <dd><p>ボーン</p>
+</dd>
+    <dt><code>useParentBone</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> を指定した場合、<code class="paramref">bone</code> で指定したボーンが存在しないと親ボーンの値を代わりに返します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>ボーンの回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarPose_GetBoneLocalRotation_VMagicMirror_Buddy_HumanBodyBones_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>ローカル座標は親ボーンに対しての姿勢になります。
+<code class="paramref">useParentBone</code> が <code>true</code> である場合の挙動の詳細は <a class="xref" href="VMagicMirror.Buddy.IAvatarPose.html#VMagicMirror_Buddy_IAvatarPose_GetBoneGlobalPosition_VMagicMirror_Buddy_HumanBodyBones_System_Boolean_">GetBoneGlobalPosition(HumanBodyBones, bool)</a> も参照してください。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarPose_GetRootPosition_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetRootPosition*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarPose_GetRootPosition" data-uid="VMagicMirror.Buddy.IAvatarPose.GetRootPosition">
+  GetRootPosition()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターの足元の位置をワールド座標の値として取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector3 GetRootPosition()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>アバターの足元の位置</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarPose_GetRootRotation_" data-uid="VMagicMirror.Buddy.IAvatarPose.GetRootRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarPose_GetRootRotation" data-uid="VMagicMirror.Buddy.IAvatarPose.GetRootRotation">
+  GetRootRotation()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターの足元の回転をワールド座標の値として取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Quaternion GetRootRotation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>アバターの足元の回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarPose_GetRootRotation_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+  この値は <a class="xref" href="VMagicMirror.Buddy.Quaternion.html#VMagicMirror_Buddy_Quaternion_identity">identity</a> に近い値であることが多いですが、
+  ゲーム入力モードによってアバターが正面以外の方向を向いている場合には、ヨー軸方向の回転が適用されます。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarPose_HasBone_" data-uid="VMagicMirror.Buddy.IAvatarPose.HasBone*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarPose_HasBone_VMagicMirror_Buddy_HumanBodyBones_" data-uid="VMagicMirror.Buddy.IAvatarPose.HasBone(VMagicMirror.Buddy.HumanBodyBones)">
+  HasBone(HumanBodyBones)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在ロードされているアバターに、指定したボーンが存在するかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasBone(HumanBodyBones bone)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bone</code> <a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html">HumanBodyBones</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a class="xref" href="VMagicMirror.Buddy.HumanBodyBones.html#VMagicMirror_Buddy_HumanBodyBones_RightThumbProximal">RightThumbProximal</a> などのボーンはアバターによっては存在しない事があるため、そのボーンの存在判定が必要な場合にはこの関数を使用します。</p>
+<p>アバターがロードされていない場合、この関数は <code class="paramref">bone</code> の値と関係なく <code>false</code> を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

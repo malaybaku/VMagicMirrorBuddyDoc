@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IDeviceLayout | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IDeviceLayout | VMagicMirror Buddy ">
+      
+      <meta name="description" content="アバターがいる空間内のキーボードなどのデバイスや、アバターウィンドウを撮影しているカメラの配置などのレイアウト情報を取得できるAPIです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.IDeviceLayout">
+
+
+
+  <h1 id="VMagicMirror_Buddy_IDeviceLayout" data-uid="VMagicMirror.Buddy.IDeviceLayout" class="text-break">
+Interface IDeviceLayout  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>アバターがいる空間内のキーボードなどのデバイスや、アバターウィンドウを撮影しているカメラの配置などのレイアウト情報を取得できるAPIです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDeviceLayout</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetCameraFov_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetCameraFov*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetCameraFov" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetCameraFov">
+  GetCameraFov()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画面を映しているカメラについて、視野角(Field of View)を度数法の値で取得します。
+この視野角は垂直方向の視野角を表します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float GetCameraFov()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>カメラの視野角 [deg]</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetCameraPose_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetCameraPose*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetCameraPose" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetCameraPose">
+  GetCameraPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画面を映しているカメラについて、現在の姿勢を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Pose GetCameraPose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Pose.html">Pose</a></dt>
+    <dd><p>カメラの姿勢</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetGamepadPose_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetGamepadPose*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetGamepadPose" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetGamepadPose">
+  GetGamepadPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画面内に表示されるゲームパッドの基準位置の姿勢を取得します。
+ゲームパッドが非表示の場合も姿勢を取得できます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Pose GetGamepadPose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Pose.html">Pose</a></dt>
+    <dd><p>ゲームパッドの姿勢</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetGamepadVisible_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetGamepadVisible*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetGamepadVisible" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetGamepadVisible">
+  GetGamepadVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ゲームパッドを表示中かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetGamepadVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>ゲームパッドを表示中ならば <code>true</code>、そうでなければ <code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetKeyboardPose_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetKeyboardPose*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetKeyboardPose" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetKeyboardPose">
+  GetKeyboardPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画面内に表示されるキーボードの基準位置の姿勢を取得します。
+キーボードが非表示の場合も姿勢を取得できます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Pose GetKeyboardPose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Pose.html">Pose</a></dt>
+    <dd><p>キーボードの姿勢</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetKeyboardVisible_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetKeyboardVisible*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetKeyboardVisible" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetKeyboardVisible">
+  GetKeyboardVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>キーボードを表示中かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetKeyboardVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>キーボードを表示中ならば <code>true</code>、そうでなければ <code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetPenTabletPose_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetPenTabletPose*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetPenTabletPose" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetPenTabletPose">
+  GetPenTabletPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画面内に表示されるペンタブレットの基準位置の姿勢を取得します。
+ペンタブレットが非表示の場合も姿勢を取得できます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Pose GetPenTabletPose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Pose.html">Pose</a></dt>
+    <dd><p>ペンタブレットの姿勢</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetPenTabletVisible_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetPenTabletVisible*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetPenTabletVisible" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetPenTabletVisible">
+  GetPenTabletVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ペンタブレットを表示中かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetPenTabletVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>ペンタブレットを表示中ならば <code>true</code>、そうでなければ <code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetTouchpadPose_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetTouchpadPose*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetTouchpadPose" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetTouchpadPose">
+  GetTouchpadPose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画面内に表示されるタッチパッドの基準位置の姿勢を取得します。
+タッチパッドが非表示の場合も姿勢を取得できます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Pose GetTouchpadPose()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Pose.html">Pose</a></dt>
+    <dd><p>タッチパッドの姿勢</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IDeviceLayout_GetTouchpadVisible_" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetTouchpadVisible*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IDeviceLayout_GetTouchpadVisible" data-uid="VMagicMirror.Buddy.IDeviceLayout.GetTouchpadVisible">
+  GetTouchpadVisible()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>タッチパッドを表示中かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool GetTouchpadVisible()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>タッチパッドを表示中ならば <code>true</code>、そうでなければ <code>false</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

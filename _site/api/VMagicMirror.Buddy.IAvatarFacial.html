@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IAvatarFacial | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IAvatarFacial | VMagicMirror Buddy ">
+      
+      <meta name="description" content="アバターの表情の状態に関するAPIです。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.IAvatarFacial">
+
+
+
+  <h1 id="VMagicMirror_Buddy_IAvatarFacial" data-uid="VMagicMirror.Buddy.IAvatarFacial" class="text-break">
+Interface IAvatarFacial  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>アバターの表情の状態に関するAPIです。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAvatarFacial</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IAvatarFacial_CurrentFacial_" data-uid="VMagicMirror.Buddy.IAvatarFacial.CurrentFacial*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarFacial_CurrentFacial" data-uid="VMagicMirror.Buddy.IAvatarFacial.CurrentFacial">
+  CurrentFacial
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在アバターに適用されている表情のうち、表情トラッキング以外の方法で明示的に適用された表情のBlendShapeClipの名称を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string CurrentFacial { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarFacial_CurrentFacial_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+  このプロパティでは、Word to Motion機能によって表情を切り替えたり、外部トラッキングによるFace Switch機能で表情を切り替えた場合の表情を取得できます。
+  HappyやSurprisedなど表情はこの方法で取得できます。
+</p>
+<p>
+  リップシンクやまばたきのブレンドシェイプはこのプロパティでは取得できません。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarFacial_IsTalking_" data-uid="VMagicMirror.Buddy.IAvatarFacial.IsTalking*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarFacial_IsTalking" data-uid="VMagicMirror.Buddy.IAvatarFacial.IsTalking">
+  IsTalking
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>マイク入力で発声を検知し、アバターにリップシンクが適用されている場合は<code>true</code>、それ以外の場合は<code>false</code>を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsTalking { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarFacial_IsTalking_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+  外部トラッキングによって口の開閉をトラッキングしている場合であっても、マイク入力が検知できなければ<code>false</code>を返します。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarFacial_UsePerfectSync_" data-uid="VMagicMirror.Buddy.IAvatarFacial.UsePerfectSync*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarFacial_UsePerfectSync" data-uid="VMagicMirror.Buddy.IAvatarFacial.UsePerfectSync">
+  UsePerfectSync
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>外部トラッキング機能を使用し、かつパーフェクトシンクが有効な場合に<code>true</code>、それ以外の場合は<code>false</code>を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool UsePerfectSync { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IAvatarFacial_GetActiveFaceSwitch_" data-uid="VMagicMirror.Buddy.IAvatarFacial.GetActiveFaceSwitch*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarFacial_GetActiveFaceSwitch" data-uid="VMagicMirror.Buddy.IAvatarFacial.GetActiveFaceSwitch">
+  GetActiveFaceSwitch()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ユーザーが外部トラッキング機能に基づくFace Switch機能を使っている場合に、Face Switch機能で検出した表情の名称を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">FaceSwitchState GetActiveFaceSwitch()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.FaceSwitchState.html">FaceSwitchState</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarFacial_GetCurrentValue_" data-uid="VMagicMirror.Buddy.IAvatarFacial.GetCurrentValue*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarFacial_GetCurrentValue_System_String_System_Boolean_" data-uid="VMagicMirror.Buddy.IAvatarFacial.GetCurrentValue(System.String,System.Boolean)">
+  GetCurrentValue(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したブレンドシェイプの現在の値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float GetCurrentValue(string name, bool customKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ブレンドシェイプ名</p>
+</dd>
+    <dt><code>customKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>カスタムブレンドシェイプの値を取得する場合は<code>true</code>、そうでなければ<code>false</code>を指定します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>ブレンドシェイプの値。0以上、1以下の値を返します。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarFacial_GetCurrentValue_System_String_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>アバターがロードされていない場合や、指定したブレンドシェイプがアバターに定義されていない場合は、この関数は0を返します。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IAvatarFacial_HasClip_" data-uid="VMagicMirror.Buddy.IAvatarFacial.HasClip*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IAvatarFacial_HasClip_System_String_" data-uid="VMagicMirror.Buddy.IAvatarFacial.HasClip(System.String)">
+  HasClip(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>現在ロードしているアバターに指定した名称のカスタムブレンドシェイプが定義されているかどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasClip(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>ブレンドシェイプ名</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarFacial_HasClip_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>アバターがロードされていない場合、この関数は<code>false</code>を返します。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="VMagicMirror_Buddy_IAvatarFacial_OnBlinked" data-uid="VMagicMirror.Buddy.IAvatarFacial.OnBlinked">
+  OnBlinked
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターがまばたき動作を行うと発火します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action OnBlinked</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IAvatarFacial_OnBlinked_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+  このイベントは自動まばたきを適用している場合の自動でのまばたき、外部トラッキングによる目のトラッキングによる瞬きに対して発火します。
+  外部トラッキングを使用していて目をゆっくり開閉した場合や、短時間で連続でまばたきを行った場合には発火しない場合があります。
+  ウインクに対してもこのイベントは発火しません。
+</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

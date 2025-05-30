@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Quaternion | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Quaternion | VMagicMirror Buddy ">
+      
+      <meta name="description" content="UnityEngineのQuaternionとほぼ同等のことが出来る四元数のデータです。 回転を表すことを目的として定義されています。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.Quaternion">
+
+
+
+  <h1 id="VMagicMirror_Buddy_Quaternion" data-uid="VMagicMirror.Buddy.Quaternion" class="text-break">
+Struct Quaternion  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>UnityEngineのQuaternionとほぼ同等のことが出来る四元数のデータです。
+回転を表すことを目的として定義されています。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Quaternion : IEquatable&lt;Quaternion&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_Quaternion__ctor_" data-uid="VMagicMirror.Buddy.Quaternion.#ctor*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion__ctor_System_Single_System_Single_System_Single_System_Single_" data-uid="VMagicMirror.Buddy.Quaternion.#ctor(System.Single,System.Single,System.Single,System.Single)">
+  Quaternion(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>各成分の値を指定してインスタンスを初期化します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion(float x, float y, float z, float w)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>w</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_w" data-uid="VMagicMirror.Buddy.Quaternion.w">
+  w
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>w成分を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float w</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_x" data-uid="VMagicMirror.Buddy.Quaternion.x">
+  x
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>x成分を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float x</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_y" data-uid="VMagicMirror.Buddy.Quaternion.y">
+  y
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>y成分を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float y</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_z" data-uid="VMagicMirror.Buddy.Quaternion.z">
+  z
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>z成分を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float z</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_eulerAngles_" data-uid="VMagicMirror.Buddy.Quaternion.eulerAngles*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_eulerAngles" data-uid="VMagicMirror.Buddy.Quaternion.eulerAngles">
+  eulerAngles
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オイラー角として回転を取得、設定します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 eulerAngles { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_Quaternion_eulerAngles_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+  回転の適用順はUnityEngine.Quaternionに準じており、YXZの順に適用されます。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_identity_" data-uid="VMagicMirror.Buddy.Quaternion.identity*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_identity" data-uid="VMagicMirror.Buddy.Quaternion.identity">
+  identity
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>回転を行わないことを表す値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion identity { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_normalized_" data-uid="VMagicMirror.Buddy.Quaternion.normalized*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_normalized" data-uid="VMagicMirror.Buddy.Quaternion.normalized">
+  normalized
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>大きさを正規化した値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Quaternion normalized { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Angle_" data-uid="VMagicMirror.Buddy.Quaternion.Angle*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Angle_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.Quaternion.Angle(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Quaternion)">
+  Angle(Quaternion, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した回転どうしのなす角度を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Angle(Quaternion a, Quaternion b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>指定した回転どうしのなす角度</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_AngleAxis_" data-uid="VMagicMirror.Buddy.Quaternion.AngleAxis*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_AngleAxis_System_Single_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.Quaternion.AngleAxis(System.Single,VMagicMirror.Buddy.Vector3)">
+  AngleAxis(float, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>度数法で表した回転角および回転軸ベクトルを指定することで、回転を表す値を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion AngleAxis(float angle, Vector3 axis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>度数法で表した回転角</p>
+</dd>
+    <dt><code>axis</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>回転軸ベクトル</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>指定した角度および軸に基づいた回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Dot_" data-uid="VMagicMirror.Buddy.Quaternion.Dot*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Dot_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.Quaternion.Dot(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Quaternion)">
+  Dot(Quaternion, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Quaternionをベクトルとして見たときの内積を計算します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Dot(Quaternion a, Quaternion b)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>b</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>内積の値</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Equals_" data-uid="VMagicMirror.Buddy.Quaternion.Equals*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Equals_System_Object_" data-uid="VMagicMirror.Buddy.Quaternion.Equals(System.Object)">
+  Equals(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether this instance and a specified object are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if <code class="paramref">obj</code> and this instance are the same type and represent the same value; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Equals_" data-uid="VMagicMirror.Buddy.Quaternion.Equals*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Equals_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.Quaternion.Equals(VMagicMirror.Buddy.Quaternion)">
+  Equals(Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Indicates whether the current object is equal to another object of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Quaternion other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>An object to compare with this object.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the current object is equal to the <code class="paramref">other</code> parameter; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Euler_" data-uid="VMagicMirror.Buddy.Quaternion.Euler*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Euler_System_Single_System_Single_System_Single_" data-uid="VMagicMirror.Buddy.Quaternion.Euler(System.Single,System.Single,System.Single)">
+  Euler(float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オイラー角を指定して回転を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Euler(float x, float y, float z)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>x軸まわりの回転角を度数法で表した値</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>y軸まわりの回転角を度数法で表した値</p>
+</dd>
+    <dt><code>z</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>z軸まわりの回転角を度数法で表した値</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>指定したオイラー角に基づく回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_Quaternion_Euler_System_Single_System_Single_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>回転の適用順はUnityEngine.Quaternionに準じており、YXZの順に適用されます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Euler_" data-uid="VMagicMirror.Buddy.Quaternion.Euler*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Euler_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.Quaternion.Euler(VMagicMirror.Buddy.Vector3)">
+  Euler(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>オイラー角を指定して回転を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Euler(Vector3 euler)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>euler</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>xyzの各軸まわりの回転角を度数法で表した値</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>指定したオイラー角に基づく回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_Quaternion_Euler_VMagicMirror_Buddy_Vector3__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>回転の適用順はUnityEngine.Quaternionに準じており、YXZの順に適用されます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_FromToRotation_" data-uid="VMagicMirror.Buddy.Quaternion.FromToRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_FromToRotation_VMagicMirror_Buddy_Vector3_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.Quaternion.FromToRotation(VMagicMirror.Buddy.Vector3,VMagicMirror.Buddy.Vector3)">
+  FromToRotation(Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ある方向から別の方向に向くような回転を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion FromToRotation(Vector3 fromDirection, Vector3 toDirection)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromDirection</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+    <dt><code>toDirection</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p><code class="paramref">fromDirection</code>から<code class="paramref">toDirection</code>に向くような回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_GetHashCode_" data-uid="VMagicMirror.Buddy.Quaternion.GetHashCode*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_GetHashCode" data-uid="VMagicMirror.Buddy.Quaternion.GetHashCode">
+  GetHashCode()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the hash code for this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>A 32-bit signed integer that is the hash code for this instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Inverse_" data-uid="VMagicMirror.Buddy.Quaternion.Inverse*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Inverse_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.Quaternion.Inverse(VMagicMirror.Buddy.Quaternion)">
+  Inverse(Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した回転の逆回転を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Inverse(Quaternion rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotation</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>計算元となる回転</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>逆回転として計算された回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_LookRotation_" data-uid="VMagicMirror.Buddy.Quaternion.LookRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_LookRotation_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.Quaternion.LookRotation(VMagicMirror.Buddy.Vector3)">
+  LookRotation(Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ワールド座標上で指定した方向を向くような回転を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion LookRotation(Vector3 forward)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>forward</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>正面を表すワールド座標上の方向</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>指定した方向を向くような回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_Quaternion_LookRotation_VMagicMirror_Buddy_Vector3__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この関数では、視点の上方向は<a class="xref" href="VMagicMirror.Buddy.Vector3.html#VMagicMirror_Buddy_Vector3_up">up</a>であるものとして計算が行われます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_LookRotation_" data-uid="VMagicMirror.Buddy.Quaternion.LookRotation*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_LookRotation_VMagicMirror_Buddy_Vector3_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.Quaternion.LookRotation(VMagicMirror.Buddy.Vector3,VMagicMirror.Buddy.Vector3)">
+  LookRotation(Vector3, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ワールド座標上で指定した方向を向き、かつローカル座標上で上方向が指定した向きになるような回転を生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion LookRotation(Vector3 forward, Vector3 upwards)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>forward</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>正面を表すワールド座標上の方向</p>
+</dd>
+    <dt><code>upwards</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>カメラの上方向を表すようなワールド座標上の方向</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>指定した方向を向くような回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_Quaternion_LookRotation_VMagicMirror_Buddy_Vector3_VMagicMirror_Buddy_Vector3__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><code class="paramref">upwards</code>は省略可能であり、省略した場合は<a class="xref" href="VMagicMirror.Buddy.Vector3.html#VMagicMirror_Buddy_Vector3_up">up</a>が指定されたものとして扱われます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Set_" data-uid="VMagicMirror.Buddy.Quaternion.Set*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Set_System_Single_System_Single_System_Single_System_Single_" data-uid="VMagicMirror.Buddy.Quaternion.Set(System.Single,System.Single,System.Single,System.Single)">
+  Set(float, float, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>成分の値を指定してインスタンスを更新します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(float newX, float newY, float newZ, float newW)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>newX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newZ</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+    <dt><code>newW</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_Slerp_" data-uid="VMagicMirror.Buddy.Quaternion.Slerp*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_Slerp_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_System_Single_" data-uid="VMagicMirror.Buddy.Quaternion.Slerp(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Quaternion,System.Single)">
+  Slerp(Quaternion, Quaternion, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2つの回転を球面補間した値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion Slerp(Quaternion a, Quaternion b, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p><code class="paramref">t</code>が0のときに適用される回転</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p><code class="paramref">t</code>が1のときに適用される回転</p>
+</dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>補間の適用率を表す値。0であれば結果が<code class="paramref">a</code>となり、1であれば結果は<code class="paramref">b</code>に一致します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>補間された回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_Quaternion_Slerp_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><code class="paramref">t</code>の値は0以上1以下に丸めて適用されます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_SlerpUnclamped_" data-uid="VMagicMirror.Buddy.Quaternion.SlerpUnclamped*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_SlerpUnclamped_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_System_Single_" data-uid="VMagicMirror.Buddy.Quaternion.SlerpUnclamped(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Quaternion,System.Single)">
+  SlerpUnclamped(Quaternion, Quaternion, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2つの回転を球面補間した値を取得します。
+<a class="xref" href="VMagicMirror.Buddy.Quaternion.html#VMagicMirror_Buddy_Quaternion_Slerp_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_System_Single_">Slerp(Quaternion, Quaternion, float)</a>と異なり、<code class="paramref">t</code>の値は [0, 1] の範囲に丸められません。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion SlerpUnclamped(Quaternion a, Quaternion b, float t)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>a</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p><code class="paramref">t</code>が0のときに適用される回転</p>
+</dd>
+    <dt><code>b</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p><code class="paramref">t</code>が1のときに適用される回転</p>
+</dd>
+    <dt><code>t</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>補間の適用率を表す値。0であれば結果が<code class="paramref">a</code>となり、1であれば結果は<code class="paramref">b</code>に一致します。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>補間された回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_ToAngleAxis_" data-uid="VMagicMirror.Buddy.Quaternion.ToAngleAxis*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_ToAngleAxis_System_Single__VMagicMirror_Buddy_Vector3__" data-uid="VMagicMirror.Buddy.Quaternion.ToAngleAxis(System.Single@,VMagicMirror.Buddy.Vector3@)">
+  ToAngleAxis(out float, out Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>回転をdegreeで表した角度と回転軸に分解した値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ToAngleAxis(out float angle, out Vector3 axis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>度数法で表した回転角度</p>
+</dd>
+    <dt><code>axis</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>回転軸の単位ベクトル</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_ToString_" data-uid="VMagicMirror.Buddy.Quaternion.ToString*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_ToString" data-uid="VMagicMirror.Buddy.Quaternion.ToString">
+  ToString()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the fully qualified type name of this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The fully qualified type name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="operators">Operators
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_op_Equality_" data-uid="VMagicMirror.Buddy.Quaternion.op_Equality*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_op_Equality_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.Quaternion.op_Equality(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Quaternion)">
+  operator ==(Quaternion, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2つの回転がほぼ等しければ <code>true</code> 、そうでなければ <code>false</code> を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Quaternion lhs, Quaternion rhs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lhs</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>rhs</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_op_Inequality_" data-uid="VMagicMirror.Buddy.Quaternion.op_Inequality*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_op_Inequality_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.Quaternion.op_Inequality(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Quaternion)">
+  operator !=(Quaternion, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>2つの回転が異なれば <code>true</code>、ほぼ等しければ <code>false</code> を返します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Quaternion lhs, Quaternion rhs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lhs</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>rhs</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_op_Multiply_" data-uid="VMagicMirror.Buddy.Quaternion.op_Multiply*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_op_Multiply_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Quaternion_" data-uid="VMagicMirror.Buddy.Quaternion.op_Multiply(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Quaternion)">
+  operator *(Quaternion, Quaternion)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>回転を合成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Quaternion operator *(Quaternion lhs, Quaternion rhs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lhs</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+    <dt><code>rhs</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>合成した回転</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_Quaternion_op_Multiply_" data-uid="VMagicMirror.Buddy.Quaternion.op_Multiply*"></a>
+
+  <h3 id="VMagicMirror_Buddy_Quaternion_op_Multiply_VMagicMirror_Buddy_Quaternion_VMagicMirror_Buddy_Vector3_" data-uid="VMagicMirror.Buddy.Quaternion.op_Multiply(VMagicMirror.Buddy.Quaternion,VMagicMirror.Buddy.Vector3)">
+  operator *(Quaternion, Vector3)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>回転をベクトルに適用します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector3 operator *(Quaternion rotation, Vector3 point)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotation</code> <a class="xref" href="VMagicMirror.Buddy.Quaternion.html">Quaternion</a></dt>
+    <dd><p>ベクトルに適用したい回転</p>
+</dd>
+    <dt><code>point</code> <a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>回転させる対象となるベクトル</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.Vector3.html">Vector3</a></dt>
+    <dd><p>回転を適用した状態のベクトル</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

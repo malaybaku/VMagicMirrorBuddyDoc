@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Getting Started | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Getting Started | VMagicMirror Buddy ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/docs/getting-started.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="doc-getting-started">
+<h1 id="getting-started">Getting Started</h1>
+
+<p>このページでは、初めてVMagicMirrorにサブキャラを自作する場合の基本的な概念と導入手順を紹介します。</p>
+<p>概念等の説明をスキップしてサンプル導入から始める場合は、<a href="#samplezip">サンプルzipを導入して実行する</a> から読み始めて下さい。</p>
+<h2 id="サブキャラ機能とは">サブキャラ機能とは</h2>
+<p>サブキャラ機能とは、VMagicMirrorから読み込める <code>C#</code> スクリプトを記述することで、メインのアバターと別で更にキャラクターを表示して制御できる機能です。</p>
+<p>v4.0.0時点では画像(<code>.png</code>)を読み込んで平面的、または空間的に表示することができます。そのほか、v4.0.0時点でサブキャラは以下の機能をサポートしています。</p>
+<ul>
+<li>短い音声ファイルの再生</li>
+<li>メインアバターの動作の検出
+<ul>
+<li>例: アバターがキーボードを叩く動作を行った、アバターが「Happy」表情に切り替わった</li>
+</ul>
+</li>
+</ul>
+<p>将来的には下記のような機能もサポートを検討しています。</p>
+<ul>
+<li>VRM / GLB等の3Dモデルの読み込み</li>
+<li>サブキャラに対してマウスオーバーしたことを検出できる機能</li>
+<li>テキストの表示</li>
+<li>ネットワークとの通信やネイティブライブラリ呼び出しなどの高度な機能</li>
+</ul>
+<p>一方、サブキャラ機能では以下のような機能は導入を行わないか、または導入したとしても補助的な機能にとどまる予定です。</p>
+<ul>
+<li>メインアバターを直接操作する機能</li>
+<li>VMagicMirrorの設定をスクリプトから変更する機能</li>
+</ul>
+<h2 id="サブキャラを構成するファイル構造">サブキャラを構成するファイル構造</h2>
+<p>サブキャラは <code>(My Documents)\VMagicMirror_Files\Buddy\</code> 以下に配置したフォルダとして表現されます。</p>
+<p>このフォルダは少なくとも、スクリプト(<code>main.csx</code>) およびサブキャラの基本設定ファイル(<code>manifest.json</code>)を含む必要があります。</p>
+<p>つまり、最小の構成からなるサブキャラのフォルダは以下のような内訳になります。</p>
+<ul>
+<li><code>(My Documents)\VMagicMirror_Files</code>
+-<code>Buddy</code>
+- <code>MyBuddy</code>
+- <code>main.csx</code>
+- <code>manifest.json</code></li>
+</ul>
+<p>また、画像等のアセットをサブキャラとして同梱する場合、それも同じフォルダに格納します。
+たとえば、1枚の画像 (<code>myImage.png</code>) を表示するようにプログラムしたサブキャラを作成する場合のファイル構造は次のようになります。</p>
+<ul>
+<li><code>(My Documents)\VMagicMirror_Files\Buddy\</code>
+<ul>
+<li><code>MyBuddy</code>
+<ul>
+<li><code>main.csx</code></li>
+<li><code>manifest.json</code></li>
+<li><code>myImage.png</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="ファイルの役割">ファイルの役割</h2>
+<p><code>main.csx</code> は C# スクリプトであり、サブキャラを有効化することでアプリケーションがスクリプトを読み込んで実行します。
+VMagicMirrorではスクリプトから利用できる様々なAPIを提供しており、その一覧は <a class="xref" href="../api/VMagicMirror.Buddy.html">API</a> から確認できます。</p>
+<p><code>manifest.json</code> は JSON ファイルであり、サブキャラの表示名、バージョン、制作者名などの基本的な情報を定義します。
+また、ユーザーがGUIから編集できる設定などの定義も本ファイル上で行います。以下は定義できる設定の一例です。</p>
+<ul>
+<li>サブキャラを画像として表示するときの基本的な位置、サイズ</li>
+<li>サブキャラが特定の仕草を行うか、行わないか</li>
+<li>立ち絵を変更できるようにした場合、その立ち絵のファイルパス</li>
+</ul>
+<p><a name="samplezip"></a></p>
+<h2 id="サンプルを導入して実行する">サンプルを導入して実行する</h2>
+<p>最小限のデータからなるサブキャラを導入する方法を紹介します。</p>
+<h4 id="buddysamplezip-の導入">BuddySample.zip の導入</h4>
+<p>最小限の構成からなるサブキャラのサンプルとして <a href="../static/BuddySample.zip">BuddySample.zip</a> ファイルをダウンロードして解凍します。</p>
+<p>zipファイルの内容は以下のようになっています。</p>
+<ul>
+<li><code>main.csx</code></li>
+<li><code>manifest.json</code></li>
+<li><code>default.png</code></li>
+<li><code>omnisharp.json</code></li>
+<li><code>.vscode</code>
+<ul>
+<li><code>launch.json</code></li>
+<li><code>manifest.json</code></li>
+</ul>
+</li>
+</ul>
+<p>解凍したフォルダを適当なフォルダ名に変更し、下記のようなフォルダ構造になるように配置します。</p>
+<ul>
+<li>`(My Documents)\VMagicMirror_Files\
+<ul>
+<li><code>Buddy</code>
+<ul>
+<li><code>(フォルダ名)</code>
+<ul>
+<li><code>main.csx</code></li>
+<li><code>manifest.json</code></li>
+<li><code>default.png</code></li>
+<li>...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>配置後、VMagicMirrorを起動すると、上記のサブキャラが認識されて起動できるようになります。</p>
+<p>この時点では、サブキャラとしては同梱された <code>default.png</code> 、つまり単なる青色の丸い画像が表示されます。</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>本ページでは <code>omnisharp.json</code> や <code>.vscode</code> フォルダについて説明を省いています。これらのファイルはスクリプトの編集を補助するための設定ファイルであり、サブキャラの実行時には無視されます。
+これらのファイルについては <a class="xref" href="write-buddy-script.html">Write Buddy Script</a> ページで別途説明しています。</p>
+</div>
+<h4 id="立ち絵を差し替えてみる">立ち絵を差し替えてみる</h4>
+<p>上記の方法で起動したサブキャラに対して立ち絵を差し替えます。</p>
+<p><code>default.png</code> を適当な別の画像ファイルに置き換えます。</p>
+<p>その後、サブキャラを一旦オフにして再びオンにすると、差し替えた画像ファイルが反映されます。</p>
+<h2 id="より詳細な説明">より詳細な説明</h2>
+<p>ここではサブキャラの基本的な概念や導入例を説明しました。</p>
+<p>より詳細な説明については、各ページを参照してください。</p>
+<ul>
+<li>サブキャラの基本設定を編集する: <a class="xref" href="buddy-manifest.html">Buddy Manifest</a></li>
+<li>サブキャラのスクリプトを作成する: <a class="xref" href="write-buddy-script.html">Write Buddy Script</a></li>
+<li>サブキャラのデバッグ方法を確認する: <a class="xref" href="debug-buddy.html">Debug Buddy</a></li>
+<li>スクリプトから利用できるAPI一覧を知りたい: <a class="xref" href="../api/VMagicMirror.Buddy.html">API</a></li>
+</ul>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/malaybaku/VMagicMirror/blob/release/v4.0.0/docs_buddy/docs/getting-started.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

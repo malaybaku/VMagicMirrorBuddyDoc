@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IRootApi | VMagicMirror Buddy </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IRootApi | VMagicMirror Buddy ">
+      
+      <meta name="description" content="スクリプトから Api 変数としてアクセスできるような、サブキャラの制御に利用できるAPI群です。">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VMagicMirror Buddy">
+            VMagicMirror Buddy
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VMagicMirror.Buddy.IRootApi">
+
+
+
+  <h1 id="VMagicMirror_Buddy_IRootApi" data-uid="VMagicMirror.Buddy.IRootApi" class="text-break">
+Interface IRootApi  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VMagicMirror.html">VMagicMirror</a>.<a class="xref" href="VMagicMirror.Buddy.html">Buddy</a></dd></dl>
+  
+  </div>
+
+  <div class="markdown summary"><p>スクリプトから <code>Api</code> 変数としてアクセスできるような、サブキャラの制御に利用できるAPI群です。</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IRootApi</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Audio_" data-uid="VMagicMirror.Buddy.IRootApi.Audio*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Audio" data-uid="VMagicMirror.Buddy.IRootApi.Audio">
+  Audio
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>音声ファイルの再生に関するAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAudio Audio { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IAudio.html">IAudio</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_Audio_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>v4.0.0の時点でこのAPIはサウンドエフェクト等、短い音声の再生のみを想定したAPIとなっています。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_AvatarFacial_" data-uid="VMagicMirror.Buddy.IRootApi.AvatarFacial*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_AvatarFacial" data-uid="VMagicMirror.Buddy.IRootApi.AvatarFacial">
+  AvatarFacial
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターの表情に関するAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAvatarFacial AvatarFacial { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IAvatarFacial.html">IAvatarFacial</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_AvatarLoadEvent_" data-uid="VMagicMirror.Buddy.IRootApi.AvatarLoadEvent*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_AvatarLoadEvent" data-uid="VMagicMirror.Buddy.IRootApi.AvatarLoadEvent">
+  AvatarLoadEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターのロード状態や、ロード状態に関するイベントのAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAvatarLoadEvent AvatarLoadEvent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IAvatarLoadEvent.html">IAvatarLoadEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_AvatarMotionEvent_" data-uid="VMagicMirror.Buddy.IRootApi.AvatarMotionEvent*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_AvatarMotionEvent" data-uid="VMagicMirror.Buddy.IRootApi.AvatarMotionEvent">
+  AvatarMotionEvent
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターの動作をイベントとして検出するAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAvatarMotionEvent AvatarMotionEvent { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IAvatarMotionEvent.html">IAvatarMotionEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_AvatarPose_" data-uid="VMagicMirror.Buddy.IRootApi.AvatarPose*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_AvatarPose" data-uid="VMagicMirror.Buddy.IRootApi.AvatarPose">
+  AvatarPose
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターの姿勢に関するAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAvatarPose AvatarPose { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IAvatarPose.html">IAvatarPose</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_BuddyDirectory_" data-uid="VMagicMirror.Buddy.IRootApi.BuddyDirectory*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_BuddyDirectory" data-uid="VMagicMirror.Buddy.IRootApi.BuddyDirectory">
+  BuddyDirectory
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>このサブキャラのデータが入っているディレクトリの絶対パスを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string BuddyDirectory { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_BuddyDirectory_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+このプロパティは <code>main.csx</code> スクリプトを含むディレクトリの絶対パスを返します。
+静的なデータ定義を行ったテキストなど、サブキャラに同梱したファイルがある場合はこのディレクトリを参照してファイルを読み込めます。
+</p>
+<p>
+<a class="xref" href="VMagicMirror.Buddy.ISprite2D.html#VMagicMirror_Buddy_ISprite2D_Show_System_String_">Show(string)</a> 等では、パスを相対パスとして評価する場合、このプロパティで取得できるディレクトリからの相対パスとして評価します。
+そのため、サブキャラのオブジェクトを単に表示する場合、必ずしもこのプロパティを参照する必要はありません。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_DeviceLayout_" data-uid="VMagicMirror.Buddy.IRootApi.DeviceLayout*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_DeviceLayout" data-uid="VMagicMirror.Buddy.IRootApi.DeviceLayout">
+  DeviceLayout
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターの周辺のデバイス配置に関するAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IDeviceLayout DeviceLayout { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IDeviceLayout.html">IDeviceLayout</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Input_" data-uid="VMagicMirror.Buddy.IRootApi.Input*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Input" data-uid="VMagicMirror.Buddy.IRootApi.Input">
+  Input
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ユーザーの入力に関するAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInput Input { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IInput.html">IInput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_InteractionApiEnabled_" data-uid="VMagicMirror.Buddy.IRootApi.InteractionApiEnabled*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_InteractionApiEnabled" data-uid="VMagicMirror.Buddy.IRootApi.InteractionApiEnabled">
+  InteractionApiEnabled
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>メインアバターの姿勢や表情、およびユーザーのマイク入力などを取り扱えるインタラクションAPI全般にアクセス可能かどうかを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool InteractionApiEnabled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_InteractionApiEnabled_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>この値はアプリケーションのEditionおよびユーザー設定によって変化します。
+値が <code>false</code> の場合、 <a class="xref" href="VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_AvatarMotionEvent">AvatarMotionEvent</a> のイベントが発火しなかったり、 <a class="xref" href="VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_AvatarPose">AvatarPose</a> で有効なポーズが取得できなかったりする状態になります。</p>
+<p>ユーザー入力がないと進行不能になってしまうような挙動をサブキャラに対して実装する場合、
+このフラグも組み合わせて挙動をカスタムすることで意図しないスタックを防げます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Language_" data-uid="VMagicMirror.Buddy.IRootApi.Language*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Language" data-uid="VMagicMirror.Buddy.IRootApi.Language">
+  Language
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アプリケーションに適用されている言語を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">AppLanguage Language { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.AppLanguage.html">AppLanguage</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_Language_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+VMagicMirrorのローカライズシステムの実装都合により、この値は日本語・英語以外の言語選択を行うと <a class="xref" href="VMagicMirror.Buddy.AppLanguage.html#VMagicMirror_Buddy_AppLanguage_Unknown">Unknown</a> を返します。
+</p>
+<p>
+多くの言語に対応できるようなサブキャラを作成する場合、このプロパティの代わりに <a class="xref" href="VMagicMirror.Buddy.IProperty.html">IProperty</a> によって
+ユーザーが言語選択を別途選択できるようにすることも検討して下さい。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_MainThreadContext_" data-uid="VMagicMirror.Buddy.IRootApi.MainThreadContext*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_MainThreadContext" data-uid="VMagicMirror.Buddy.IRootApi.MainThreadContext">
+  MainThreadContext
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アプリケーションのメインスレッドのコンテキストを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">SynchronizationContext MainThreadContext { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.synchronizationcontext">SynchronizationContext</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_MainThreadContext_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>スクリプト上で非同期処理を行った結果をスプライトやVRMアバターに適用したい場合、メインスレッドに処理を戻るときに使用できます。</p>
+<p>より簡単にメインスレッドへアクセスしたい場合、変わりに <a class="xref" href="VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_RunOnMainThread_System_Func_System_Threading_Tasks_Task__">RunOnMainThread(Func&lt;Task&gt;)</a> を使用することを検討してください。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Property_" data-uid="VMagicMirror.Buddy.IRootApi.Property*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Property" data-uid="VMagicMirror.Buddy.IRootApi.Property">
+  Property
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>マニフェストで定義されたプロパティにアクセスできるAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IProperty Property { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IProperty.html">IProperty</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Screen_" data-uid="VMagicMirror.Buddy.IRootApi.Screen*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Screen" data-uid="VMagicMirror.Buddy.IRootApi.Screen">
+  Screen
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターを表示しているウィンドウに関するAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IScreen Screen { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IScreen.html">IScreen</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Transforms_" data-uid="VMagicMirror.Buddy.IRootApi.Transforms*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Transforms" data-uid="VMagicMirror.Buddy.IRootApi.Transforms">
+  Transforms
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>マニフェストで定義されたTransformの参照にアクセスできるAPIを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IManifestTransforms Transforms { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.IManifestTransforms.html">IManifestTransforms</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Create2DSprite_" data-uid="VMagicMirror.Buddy.IRootApi.Create2DSprite*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Create2DSprite" data-uid="VMagicMirror.Buddy.IRootApi.Create2DSprite">
+  Create2DSprite()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>アバターウィンドウの最前面に画像を表示するためのスプライトのインスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISprite2D Create2DSprite()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.ISprite2D.html">ISprite2D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_Create2DSprite_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>空間上へ3次元的に板状の画像を表示したい場合、代わりに <a class="xref" href="VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_Create3DSprite">Create3DSprite()</a> を使用します。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Create3DSprite_" data-uid="VMagicMirror.Buddy.IRootApi.Create3DSprite*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Create3DSprite" data-uid="VMagicMirror.Buddy.IRootApi.Create3DSprite">
+  Create3DSprite()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>画像を空間上で板状のオブジェクトとして配置するためのスプライトのインスタンスを生成します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ISprite3D Create3DSprite()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="VMagicMirror.Buddy.ISprite3D.html">ISprite3D</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_Create3DSprite_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>平面的に画像を表示したい場合、代わりに <a class="xref" href="VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_Create2DSprite">Create2DSprite()</a> を使用します。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_GetCancellationTokenOnDisabled_" data-uid="VMagicMirror.Buddy.IRootApi.GetCancellationTokenOnDisabled*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_GetCancellationTokenOnDisabled" data-uid="VMagicMirror.Buddy.IRootApi.GetCancellationTokenOnDisabled">
+  GetCancellationTokenOnDisabled()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>サブキャラが終了するときにキャンセル扱いされるようなCancellationTokenを取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">CancellationToken GetCancellationTokenOnDisabled()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_GetCancellationTokenOnDisabled_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>サブキャラの挙動として非同期処理を実装する場合、この値を使用することで、サブキャラが意図せず実行され続けることを防止できます。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_InvokeDelay_" data-uid="VMagicMirror.Buddy.IRootApi.InvokeDelay*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_InvokeDelay_System_Action_System_Single_" data-uid="VMagicMirror.Buddy.IRootApi.InvokeDelay(System.Action,System.Single)">
+  InvokeDelay(Action, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した処理を、指定された秒数のあとで実行します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InvokeDelay(Action func, float delaySeconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>実行したい関数</p>
+</dd>
+    <dt><code>delaySeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>実行のディレイ秒数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_InvokeDelay_System_Action_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは、メインアバターの仕草を検出したとき、やや遅れてリアクションを取る場合などに有効です。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_InvokeInterval_" data-uid="VMagicMirror.Buddy.IRootApi.InvokeInterval*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_InvokeInterval_System_Action_System_Single_" data-uid="VMagicMirror.Buddy.IRootApi.InvokeInterval(System.Action,System.Single)">
+  InvokeInterval(Action, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した処理を、指定された間隔で実行します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InvokeInterval(Action func, float intervalSeconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>実行したい関数</p>
+</dd>
+    <dt><code>intervalSeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>実行間隔の秒数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_InvokeInterval_System_Action_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは、Updateより低頻度で処理を実行したい場合などに有効です。</p>
+<p>このメソッドを呼び出すと、直ちに <code class="paramref">func</code> が1回実行されます。
+初回の呼び出しを遅延させる場合、 <a class="xref" href="VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_InvokeInterval_System_Action_System_Single_System_Single_">InvokeInterval(Action, float, float)</a> を使用します。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_InvokeInterval_" data-uid="VMagicMirror.Buddy.IRootApi.InvokeInterval*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_InvokeInterval_System_Action_System_Single_System_Single_" data-uid="VMagicMirror.Buddy.IRootApi.InvokeInterval(System.Action,System.Single,System.Single)">
+  InvokeInterval(Action, float, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定した処理を、指定された間隔で実行します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void InvokeInterval(Action func, float intervalSeconds, float firstDelay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>func</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd><p>実行したい関数</p>
+</dd>
+    <dt><code>intervalSeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>実行間隔の秒数</p>
+</dd>
+    <dt><code>firstDelay</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>初回に処理を実行するまでの遅延の秒数</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_InvokeInterval_System_Action_System_Single_System_Single__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>このメソッドは、Updateより低頻度で処理を実行したい場合などに有効です。</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Log_" data-uid="VMagicMirror.Buddy.IRootApi.Log*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Log_System_String_" data-uid="VMagicMirror.Buddy.IRootApi.Log(System.String)">
+  Log(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>ログ情報を出力します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void Log(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_Log_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+ログファイルは <code>VMagicMirror_Files/Logs/{buddy_name}.txt</code> として出力されます。
+<code>buddy_name</code> には、サブキャラのデータを格納しているフォルダ名が入ります。
+</p>
+<p>
+このメソッドで出力するログは、VMagicMirrorのサブキャラ設定で開発者モードを有効にし、ログ詳細度を <code>Info</code> かそれより詳細なレベルに設定した場合のみ出力されます。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_LogError_" data-uid="VMagicMirror.Buddy.IRootApi.LogError*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_LogError_System_String_" data-uid="VMagicMirror.Buddy.IRootApi.LogError(System.String)">
+  LogError(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>エラー相当のログ情報を出力します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogError(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_LogError_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+ログファイルは <code>VMagicMirror_Files/Logs/{buddy_name}.txt</code> として出力されます。
+<code>buddy_name</code> には、サブキャラのデータを格納しているフォルダ名が入ります。
+</p>
+<p>
+このメソッドで出力するログは、VMagicMirrorのサブキャラ設定で開発者モードがオフであるか、または開発者モードでログ詳細度を <code>Error</code> かそれより詳細なレベルに設定した場合のみ出力されます。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_LogWarning_" data-uid="VMagicMirror.Buddy.IRootApi.LogWarning*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_LogWarning_System_String_" data-uid="VMagicMirror.Buddy.IRootApi.LogWarning(System.String)">
+  LogWarning(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>警告相当のログ情報を出力します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void LogWarning(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_LogWarning_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+ログファイルは <code>VMagicMirror_Files/Logs/{buddy_name}.txt</code> として出力されます。
+<code>buddy_name</code> には、サブキャラのデータを格納しているフォルダ名が入ります。
+</p>
+<p>
+このメソッドで出力するログは、VMagicMirrorのサブキャラ設定で開発者モードを有効にし、ログ詳細度を <code>Warning</code> かそれより詳細なレベルに設定した場合のみ出力されます。
+</p>
+</div>
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_Random_" data-uid="VMagicMirror.Buddy.IRootApi.Random*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Random" data-uid="VMagicMirror.Buddy.IRootApi.Random">
+  Random()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>0以上、1未満のランダムな値を取得します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float Random()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="VMagicMirror_Buddy_IRootApi_RunOnMainThread_" data-uid="VMagicMirror.Buddy.IRootApi.RunOnMainThread*"></a>
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_RunOnMainThread_System_Func_System_Threading_Tasks_Task__" data-uid="VMagicMirror.Buddy.IRootApi.RunOnMainThread(System.Func{System.Threading.Tasks.Task})">
+  RunOnMainThread(Func&lt;Task&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>指定したタスクをメインスレッドで実行します。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void RunOnMainThread(Func&lt;Task&gt; task)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>task</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</dt>
+    <dd><p>メインスレッドで実行したいタスク</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_RunOnMainThread_System_Func_System_Threading_Tasks_Task___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>VMagicMirrorはUnity Engineで実行されており、VRMやスプライトの操作はゲームエンジンのメインスレッド上で行う必要があります。
+スクリプト上でTaskによる非同期処理を行う場合、このメソッドを用いることで、非同期処理の結果をサブキャラに適用しやすくなります。</p>
+</div>
+
+
+
+
+  <h2 class="section" id="events">Events
+</h2>
+
+
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Start" data-uid="VMagicMirror.Buddy.IRootApi.Start">
+  Start
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>サブキャラのロード後に一度だけ呼ばれます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action Start</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_Start_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p><a class="xref" href="VMagicMirror.Buddy.IRootApi.html#VMagicMirror_Buddy_IRootApi_Update">Update</a> の最初の呼び出しよりも前に呼ばれることが保証されます。</p>
+</div>
+
+
+
+
+
+  <h3 id="VMagicMirror_Buddy_IRootApi_Update" data-uid="VMagicMirror.Buddy.IRootApi.Update">
+  Update
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>毎フレームごと、つまり描画内容の更新のたびに呼ばれます。
+引数には、前回のフレームからの経過時間が秒単位で渡されます。</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">event Action&lt;float&gt; Update</code></pre>
+  </div>
+
+
+
+
+
+
+  <h4 class="section">Event Type</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="VMagicMirror_Buddy_IRootApi_Update_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>引数は通常、 1/60 に近い値になります。</p>
+<p>このイベントは毎フレーム呼ばれるため、長時間かかる処理をイベントハンドラとして実行するのは避けるようにしてください。</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

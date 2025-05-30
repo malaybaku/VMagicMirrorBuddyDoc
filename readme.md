@@ -2,9 +2,11 @@
 
 Author: Baxter / 獏星(ばくすたー)
 
+ページ: [VMagicMirror Buddy Doc](https://malaybaku.github.io/VMagicMirrorBuddyDoc/)
+
 ## About
 
-[VMagicMirror](https://github.com/malaybaku/VMagicMirror) の v4.0.0 で導入されたサブキャラ機能について、開発者向けドキュメントを公開するためのrepositoryです。
+[VMagicMirror](https://github.com/malaybaku/VMagicMirror) の v4.0.0 で導入したサブキャラ機能について、開発者向けドキュメントを公開するためのrepositoryです。
 
 ページの目的や用途、見た目上のトーンがいずれも [ヘルプ用の公式ページ](https://malaybaku.github.io/VMagicMirror/) と大幅に異なるため、URLが完全に分かれるようにrepositoryも分けています。
 

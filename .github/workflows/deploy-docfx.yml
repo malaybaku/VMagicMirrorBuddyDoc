@@ -1,8 +1,5 @@
-# .github/workflows/deploy-docfx.yml
-
 name: Deploy DocFX Site
 
-# このワークフローは手動実行のみを許可する
 on:
   workflow_dispatch:
 
@@ -12,81 +9,43 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. このリポジトリ (VMagicMirrorBuddyDoc) をチェックアウト
       - name: Checkout this repository
         uses: actions/checkout@v3
-        # デフォルトで GITHUB_TOKEN を用いてクローン (必要に応じて LFS も)
 
-
-      # 2. VMagicMirror リポジトリ (master ブランチ) をチェックアウト
       - name: Checkout VMagicMirror repository
         uses: actions/checkout@v3
         with:
           repository: malaybaku/VMagicMirror
           path: VMagicMirror
           ref: master
-        # これにより $GITHUB_WORKSPACE/VMagicMirror に master が取得される :contentReference[oaicite:7]{index=7}
 
-
-      # 3. .NET SDK をセットアップ (DocFX CLI の実行に必要)
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
           dotnet-version: '6.0.x'
-        # DocFX v3 以降も .NET 6.0 で動作するため、6.0.x 系を指定 :contentReference[oaicite:8]{index=8}
 
-
-      # 4. DocFX CLI (docfx.console) をグローバルツールとしてインストール
       - name: Install DocFX CLI
         run: |
           dotnet tool install -g docfx.console
-        # docfx.console をインストールすることで、シェルで `docfx` コマンドが使えるようになる 
 
-
-      # 5. dotnet グローバルツールのパスを PATH に追加
       - name: Add dotnet tools to PATH
         run: |
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-        # これで `docfx` が以降のステップで実行可能になる :contentReference[oaicite:10]{index=10}
 
 
-      # 6. docfx.json の build.dest の有無をチェック (オプション)
-      #    * ここはワークフロー実行前に手動確認済みという前提だが、
-      #      もしプログラム上で検出したい場合は grep 等でチェック可能。
-      #
-      #    以下では「dest が定義されている場合はオプションなしで docfx build、
-      #                    定義されていなければ -o _site」を例示する。
-      #
-      #    もし build.dest が _site 以外のフォルダを指す場合は適宜 -o <dest> を使って上書きも可。
-
-
-      # 7. DocFX でサイトをビルド
-      #    ※ユーザーが事前に docfx.json 内で "build": { "dest": "_site" } と設定済みなら
-      #      `-o _site` は不要 :contentReference[oaicite:11]{index=11}。
-      #
-      #    ここでは、安全策として「--output _site」を明示的に指定しているパターンを示す。
-      #
       - name: Build DocFX site
         working-directory: VMagicMirror/docs_buddy
         run: |
-          # 以下2つのうち、プロジェクトの docfx.json の設定に合わせていずれかを有効化してください
-          #
-          # (A) docfx.json に "build.dest": "_site" が書かれている場合 → オプション不要
-          #    docfx build
-          #
-          # (B) docfx.json に "build.dest" がない、または明示的に _site 以外にしたい場合
-          docfx build -o _site
+          # docfx.json に "build.dest": "_site" が設定済みのため、出力先の指定は不要
+          docfx build
 
 
-      # 8. 生成された静的サイトを別ブランチ (docs-site) にデプロイ
-      - name: Deploy to GitHub Pages (docs-site branch)
+      # 既存のgh-pagesブランチにデプロイ（GitHub Pagesで公開中）
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          # GitHub Actions の組み込みトークンを使って push
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 新規にデプロイ用ブランチを作成したい場合は
-          # force_orphan: true を付けると既存履歴がクリアされ孤立ブランチになる
-          publish_branch: docs-site
+          publish_branch: gh-pages
           publish_dir: VMagicMirror/docs_buddy/_site
-          # force_orphan: true   # 履歴リセットして初回のみ orphan ブランチにしたい場合に有効化
-        # これにより、_site 以下のファイルが docs-site ブランチのルートにコミットされる 
+          # VMagicMirrorレポジトリのdocs_buddyで生成されたサイトを
+          # このレポジトリのgh-pagesブランチにデプロイ 

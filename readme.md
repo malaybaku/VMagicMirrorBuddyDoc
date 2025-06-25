@@ -10,10 +10,12 @@ Author: Baxter / 獏星(ばくすたー)
 
 ページの目的や用途、見た目上のトーンがいずれも [ヘルプ用の公式ページ](https://malaybaku.github.io/VMagicMirror/) と大幅に異なるため、URLが完全に分かれるようにrepositoryも分けています。
 
+## Deploy
+
+Actionsの `deploy doc` でページのビルドおよび展開を行います。
+
+とくにActionが正常に動作するための条件として、 https://github.com/malaybaku/VMagicMirror/tree/master/docs_buddy/readme.md に書かれている `docfx docfx.json` コマンドが成功することが必要です。
+
 ## LICENSE
 
 [VMagicMirror](https://github.com/malaybaku/VMagicMirror) 自体のライセンスが適用されます。
-
-## NOTE
-
-[VMagicMirror](https://github.com/malaybaku/VMagicMirror) のソースを持ってきてページを更新するワークフローを適用予定ですが、これは現時点では未実施であり、 v4.0.0 のリリース後に別途実施を予定しています。

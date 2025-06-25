@@ -1,0 +1,71 @@
+name: Deploy DocFX Site
+
+on:
+  workflow_dispatch:
+
+# GitHub Pagesへのデプロイに必要な権限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同時実行を制御
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build DocFX
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+
+      - name: Checkout VMagicMirror repository
+        uses: actions/checkout@v3
+        with:
+          repository: malaybaku/VMagicMirror
+          path: VMagicMirror
+          ref: master
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Install DocFX CLI
+        run: |
+          dotnet tool install -g docfx.console
+
+      - name: Add dotnet tools to PATH
+        run: |
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+
+
+      - name: Build DocFX site
+        working-directory: VMagicMirror/docs_buddy
+        run: |
+          # docfx.json に "build.dest": "_site" が設定済みのため、出力先の指定は不要
+          docfx build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          # VMagicMirrorレポジトリのdocs_buddyで生成されたサイトをアップロード
+          path: VMagicMirror/docs_buddy/_site
+
+  # デプロイジョブ
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v3

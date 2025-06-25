@@ -32,16 +32,10 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '6.0.x'
+          dotnet-version: 8.x
 
       - name: Install DocFX CLI
-        run: |
-          dotnet tool install -g docfx.console
-
-      - name: Add dotnet tools to PATH
-        run: |
-          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
-
+        run: dotnet tool update -g docfx
 
       - name: Build DocFX site
         working-directory: VMagicMirror/docs_buddy

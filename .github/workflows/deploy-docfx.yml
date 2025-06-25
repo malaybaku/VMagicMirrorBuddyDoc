@@ -41,7 +41,7 @@ jobs:
         working-directory: VMagicMirror/docs_buddy
         run: |
           # docfx.json に "build.dest": "_site" が設定済みのため、出力先の指定は不要
-          docfx build docfx.json
+          docfx docfx.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

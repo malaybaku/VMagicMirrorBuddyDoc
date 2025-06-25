@@ -1,4 +1,4 @@
-name: Deploy DocFX Site
+name: deploy doc
 
 on:
   workflow_dispatch:
@@ -16,7 +16,6 @@ concurrency:
 
 jobs:
   build:
-    name: Build DocFX
     runs-on: ubuntu-latest
     steps:
       - name: Checkout this repository
@@ -34,10 +33,10 @@ jobs:
         with:
           dotnet-version: 8.x
 
-      - name: Install DocFX CLI
+      - name: Update docfx
         run: dotnet tool update -g docfx
 
-      - name: Build DocFX site
+      - name: Run docfx
         working-directory: VMagicMirror/docs_buddy
         run: |
           # docfx.json に "build.dest": "_site" が設定済みのため、出力先の指定は不要
@@ -52,7 +51,6 @@ jobs:
           # VMagicMirrorレポジトリのdocs_buddyで生成されたサイトをアップロード
           path: VMagicMirror/docs_buddy/_site
 
-  # デプロイジョブ
   deploy:
     environment:
       name: github-pages
